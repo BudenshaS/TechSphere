@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about TechSphere, a digital platform dedicated to exploring technology, innovation and knowledge.">
+    <title>About TechSphere | Explore. Learn. Build.</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-page { max-width: 1000px; margin: 70px auto; padding: 25px; }
+        .about-hero { padding: 70px 40px; border-radius: 26px; background: linear-gradient(135deg,#111c35,#30245e,#102e40); margin-bottom: 40px; }
+        .about-tag { color: #9be9ff; letter-spacing: 3px; text-transform: uppercase; font-size: 13px; }
+        .about-hero h1 { font-size: clamp(38px,6vw,65px); margin: 20px 0; line-height: 1.15; }
+        .about-hero p { color: #cbd5e1; font-size: 18px; max-width: 750px; line-height: 1.8; }
+        .about-content { line-height: 1.9; color: #cbd5e1; }
+        .about-content h2 { color: white; margin-top: 40px; }
+        .about-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 20px; margin: 30px 0; }
+        .about-card { background: #101827; border: 1px solid #26364c; padding: 25px; border-radius: 18px; transition: .3s; }
+        .about-card:hover { transform: translateY(-5px); border-color: #7b70ff; }
+        .about-card h3 { color: #a5b4fc; margin-top: 0; }
+        .about-back { display: inline-block; margin-bottom: 25px; color: #8be9ff; text-decoration: none; }
+        .about-highlight { padding: 24px; background: #101d2a; border-left: 3px solid #60d9ff; border-radius: 12px; margin: 25px 0; }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">T<span>echSphere</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#topics">Explore</a>
+            <a href="index.html#articles">Articles</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
+</header>
+
+<main class="about-page">
+
+    <a href="index.html" class="about-back">← Back to Home</a>
+
+    <section class="about-hero">
+        <span class="about-tag">Who We Are</span>
+        <h1>About TechSphere</h1>
+        <p>Explore. Learn. Build. TechSphere is a technology-focused platform designed to explore digital knowledge, emerging innovations and the ideas shaping tomorrow.</p>
+    </section>
+
+    <section class="about-content">
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to make technology knowledge approachable, engaging and useful. We aim to help readers understand digital concepts, discover new technologies and develop curiosity about the future.</p>
+
+        <h2>What We Explore</h2>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Explore AI concepts, intelligent systems, applications and developments.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Programming</h3>
+                <p>Discover programming concepts, coding fundamentals and software development.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Machine Learning</h3>
+                <p>Understand algorithms, data, models and the foundations of machine learning.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Cybersecurity</h3>
+                <p>Learn about digital protection, security awareness and online privacy.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Web Development</h3>
+                <p>Explore web technologies, website development and modern digital experiences.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Future Technology</h3>
+                <p>Discover emerging innovations and technologies that may shape tomorrow.</p>
+            </div>
+        </div>
+
+        <h2>Our Vision</h2>
+        <p>We envision a digital space where curiosity leads to learning, learning leads to ideas and ideas inspire people to explore and build.</p>
+
+        <div class="about-highlight">
+            <strong>Explore. Learn. Build.</strong><br>
+            Technology is more than information. It is an opportunity to understand, create and innovate.
+        </div>
+
+        <h2>Why TechSphere?</h2>
+        <p>Technology changes continuously. TechSphere aims to present technology topics through approachable articles and educational content, helping readers explore the digital world one topic at a time.</p>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© <span id="year"></span> TechSphere. Explore. Learn. Build.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Developer | TechSphere</title>
+    <meta name="description" content="Meet the developer behind TechSphere, a technology knowledge platform.">
+    <meta name="author" content="Buden sha S">
+    <meta name="theme-color" content="#080b14">
+
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .developer-page {
+            min-height: 85vh;
+            padding: 140px 20px 80px;
+        }
+
+        .developer-container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .developer-card {
+            padding: 55px 45px;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 24px;
+            background: linear-gradient(
+                145deg,
+                rgba(17,24,39,0.95),
+                rgba(8,11,20,0.98)
+            );
+            box-shadow: 0 25px 80px rgba(0,0,0,0.25);
+        }
+
+        .developer-label {
+            color: #a78bfa;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+        }
+
+        .developer-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(36px, 6vw, 60px);
+            line-height: 1.15;
+            margin-bottom: 22px;
+        }
+
+        .developer-description {
+            color: #a0a7b8;
+            line-height: 1.9;
+            font-size: 16px;
+            max-width: 720px;
+        }
+
+        .developer-divider {
+            width: 100%;
+            height: 1px;
+            background: rgba(255,255,255,0.08);
+            margin: 40px 0;
+        }
+
+        .developer-subtitle {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
+
+        .developer-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .developer-skill {
+            padding: 11px 18px;
+            border-radius: 50px;
+            border: 1px solid rgba(139,92,246,0.25);
+            background: rgba(139,92,246,0.08);
+            color: #d1c4ff;
+            font-size: 14px;
+        }
+
+        .developer-project {
+            padding: 25px;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            background: rgba(255,255,255,0.02);
+            margin-top: 20px;
+        }
+
+        .developer-project h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .developer-project p {
+            color: #a0a7b8;
+            line-height: 1.8;
+        }
+
+        .developer-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .developer-footer-note {
+            text-align: center;
+            color: #777f91;
+            font-size: 13px;
+            margin-top: 35px;
+        }
+
+        @media(max-width: 600px) {
+            .developer-page {
+                padding-top: 110px;
+            }
+
+            .developer-card {
+                padding: 30px 22px;
+            }
+
+            .developer-title {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+    <div class="nav-container">
+
+        <a class="brand-logo" href="index.html" aria-label="TechSphere Home">
+            <img src="logo.png" alt="TechSphere Logo">
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-menu" id="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#explore" class="nav-link">Explore</a>
+            <a href="index.html#articles" class="nav-link">Articles</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<!-- DEVELOPER CONTENT -->
+<main>
+
+<section class="developer-page">
+    <div class="developer-container">
+
+        <div class="developer-card">
+
+            <div class="developer-label">
+                THE CREATOR BEHIND TECHSPHERE
+            </div>
+
+            <h1 class="developer-title">
+                Meet the <span class="gradient-text">Developer.</span>
+            </h1>
+
+            <h2 class="developer-subtitle">
+                Buden sha S
+            </h2>
+
+            <p class="developer-description">
+                I'm the developer behind TechSphere, a technology-focused
+                knowledge platform created to make technology easier to
+                explore and understand.
+
+                This website is a project built through learning,
+                creativity, experimentation and web development.
+                My goal is to continue exploring software development
+                and building useful digital experiences.
+            </p>
+
+            <div class="developer-divider"></div>
+
+            <h3 class="developer-subtitle">
+                Technologies Used
+            </h3>
+
+            <p class="developer-description">
+                TechSphere's frontend was developed using the following
+                technologies and tools.
+            </p>
+
+            <div class="developer-skills">
+                <span class="developer-skill">HTML5</span>
+                <span class="developer-skill">CSS3</span>
+                <span class="developer-skill">JavaScript</span>
+                <span class="developer-skill">Responsive Design</span>
+                <span class="developer-skill">UI Design</span>
+                <span class="developer-skill">SEO Fundamentals</span>
+            </div>
+
+            <div class="developer-divider"></div>
+
+            <h3 class="developer-subtitle">
+                Project
+            </h3>
+
+            <div class="developer-project">
+                <h4>
+                    <span class="gradient-text">TechSphere</span>
+                </h4>
+
+                <p>
+                    A technology knowledge website focused on
+                    artificial intelligence, programming,
+                    cybersecurity, machine learning, web development
+                    and emerging technology.
+
+                    Designed to provide accessible learning
+                    resources and beginner-friendly guides.
+                </p>
+
+                <div class="developer-skills">
+                    <span class="developer-skill">Web Development</span>
+                    <span class="developer-skill">Technology</span>
+                    <span class="developer-skill">Knowledge Platform</span>
+                </div>
+            </div>
+
+            <div class="developer-divider"></div>
+
+            <h3 class="developer-subtitle">
+                My Journey
+            </h3>
+
+            <p class="developer-description">
+                I am continuously learning, exploring programming
+                and developing projects to improve my technical
+                knowledge and problem-solving abilities.
+
+                TechSphere represents one step in that journey.
+            </p>
+
+            <div class="developer-actions">
+
+                <a href="index.html" class="btn btn-primary">
+                    Explore TechSphere ↗
+                </a>
+
+                <a href="contact.html" class="btn btn-secondary">
+                    Contact TechSphere
+                </a>
+
+            </div>
+
+        </div>
+
+        <p class="developer-footer-note">
+            Built with curiosity, creativity and code.
+        </p>
+
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="section-container">
+
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> TechSphere. All rights reserved.</p>
+            <p class="footer-bottom-right">Explore. Learn. Build.</p>
+        </div>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
