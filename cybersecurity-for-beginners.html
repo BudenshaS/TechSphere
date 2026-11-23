@@ -1,1196 +1,562 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Cybersecurity for Beginners: Complete Guide | TechSphere</title>
-<meta name="description" content="Learn cybersecurity fundamentals, online safety, cyber threats, encryption, authentication, network security and security best practices with this beginner-friendly guide.">
-<meta name="keywords" content="cybersecurity for beginners, cyber security, online safety, network security, phishing, malware, encryption, information security">
-<meta name="author" content="Buden sha S">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0b0f19">
-
-<link rel="canonical" href="https://budenshas.github.io/TechSphere/cybersecurity-for-beginners.html">
-
-<meta property="og:title" content="Cybersecurity for Beginners | TechSphere">
-<meta property="og:description" content="Understand cybersecurity fundamentals, threats, protection methods and digital safety.">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://budenshas.github.io/TechSphere/cybersecurity-for-beginners.html">
-<meta property="og:site_name" content="TechSphere">
-
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cybersecurity for Beginners | TechSphere">
-<meta name="twitter:description" content="A complete beginner-friendly guide to cybersecurity.">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#0b0f19;
-    color:#e5e7eb;
-    line-height:1.8;
-}
-
-a{
-    color:#60a5fa;
-    text-decoration:none;
-}
-
-a:hover{
-    color:#93c5fd;
-    text-decoration:underline;
-}
-
-header{
-    background:#111827;
-    border-bottom:1px solid #263246;
-    padding:18px 7%;
-    position:sticky;
-    top:0;
-    z-index:100;
-}
-
-.nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.logo{
-    font-size:24px;
-    font-weight:bold;
-    color:#fff;
-    letter-spacing:1px;
-}
-
-.logo span{
-    color:#60a5fa;
-}
-
-.nav-links{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-}
-
-.nav-links a{
-    color:#d1d5db;
-    font-size:14px;
-    padding:9px 15px;
-    border:1px solid #263246;
-    border-radius:8px;
-    background:#0b0f19;
-    transition:0.2s ease;
-}
-
-.nav-links a:hover{
-    color:#93c5fd;
-    background:#172554;
-    border-color:#60a5fa;
-    text-decoration:none;
-}
-
-.hero{
-    padding:85px 7% 65px;
-    background:linear-gradient(135deg,#101827,#111827,#14243d);
-    border-bottom:1px solid #263246;
-}
-
-.hero-content{
-    max-width:900px;
-    margin:auto;
-}
-
-.badge{
-    display:inline-block;
-    padding:7px 14px;
-    background:#172554;
-    border:1px solid #1e40af;
-    color:#93c5fd;
-    border-radius:30px;
-    font-size:13px;
-    margin-bottom:20px;
-}
-
-.hero h1{
-    font-size:clamp(32px,5vw,52px);
-    line-height:1.2;
-    color:#fff;
-    margin-bottom:20px;
-}
-
-.hero p{
-    color:#cbd5e1;
-    font-size:18px;
-    max-width:750px;
-}
-
-.meta{
-    margin-top:20px;
-    font-size:14px;
-    color:#94a3b8;
-}
-
-.container{
-    max-width:1050px;
-    margin:auto;
-    padding:45px 22px;
-}
-
-.article-layout{
-    display:grid;
-    grid-template-columns:260px minmax(0,1fr);
-    gap:35px;
-    align-items:start;
-}
-
-.toc{
-    background:#111827;
-    border:1px solid #263246;
-    border-radius:14px;
-    padding:24px;
-    position:sticky;
-    top:100px;
-}
-
-.toc h2{
-    font-size:18px;
-    margin-bottom:15px;
-    color:#fff;
-}
-
-.toc ul{
-    list-style:none;
-}
-
-.toc li{
-    margin:10px 0;
-}
-
-.toc a{
-    color:#cbd5e1;
-    font-size:14px;
-}
-
-.article{
-    min-width:0;
-}
-
-.article section{
-    margin-bottom:45px;
-    scroll-margin-top:100px;
-}
-
-.article h2{
-    font-size:28px;
-    margin-bottom:18px;
-    color:#fff;
-}
-
-.article h3{
-    font-size:21px;
-    margin:25px 0 12px;
-    color:#93c5fd;
-}
-
-.article p{
-    margin-bottom:18px;
-    color:#cbd5e1;
-}
-
-.article ul,
-.article ol{
-    padding-left:25px;
-    margin:15px 0 22px;
-    color:#cbd5e1;
-}
-
-.article li{
-    margin-bottom:10px;
-}
-
-.highlight{
-    background:#111827;
-    border:1px solid #334155;
-    border-left:4px solid #60a5fa;
-    padding:20px;
-    border-radius:10px;
-    margin:22px 0;
-}
-
-.highlight p:last-child{
-    margin-bottom:0;
-}
-
-.card-grid{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:18px;
-    margin:25px 0;
-}
-
-.card{
-    background:#111827;
-    border:1px solid #263246;
-    padding:22px;
-    border-radius:12px;
-}
-
-.card h3{
-    margin-top:0;
-}
-
-.card p:last-child{
-    margin-bottom:0;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin:20px 0;
-    background:#111827;
-}
-
-th,td{
-    border:1px solid #334155;
-    padding:14px;
-    text-align:left;
-    vertical-align:top;
-}
-
-th{
-    background:#172554;
-    color:#fff;
-}
-
-td{
-    color:#cbd5e1;
-}
-
-.faq{
-    border:1px solid #263246;
-    border-radius:12px;
-    padding:22px;
-    margin:15px 0;
-    background:#111827;
-}
-
-.faq h3{
-    margin-top:0;
-}
-
-.cta{
-    background:linear-gradient(135deg,#172554,#111827);
-    border:1px solid #334155;
-    padding:30px;
-    border-radius:14px;
-    margin-top:35px;
-}
-
-.cta h2{
-    margin-bottom:15px;
-}
-
-footer{
-    background:#080c14;
-    border-top:1px solid #263246;
-    padding:35px 7%;
-    text-align:center;
-}
-
-footer p{
-    color:#94a3b8;
-    font-size:14px;
-    margin:8px 0;
-}
-
-.footer-links{
-    display:flex;
-    justify-content:center;
-    gap:12px;
-    flex-wrap:wrap;
-    margin:18px 0;
-}
-
-.footer-links a{
-    font-size:14px;
-    padding:8px 12px;
-    border:1px solid #263246;
-    border-radius:8px;
-    background:#111827;
-}
-
-.footer-links a:hover{
-    background:#172554;
-    border-color:#60a5fa;
-    text-decoration:none;
-}
-
-@media(max-width:850px){
-    .article-layout{
-        grid-template-columns:1fr;
-    }
-
-    .toc{
-        position:static;
-    }
-
-    .card-grid{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:600px){
-    header{
-        padding:15px 5%;
-    }
-
-    .nav{
-        align-items:flex-start;
-    }
-
-    .nav-links{
-        gap:10px;
-    }
-
-    .nav-links a{
-        padding:8px 12px;
-    }
-
-    .hero{
-        padding:55px 5%;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .container{
-        padding:30px 16px;
-    }
-
-    .article h2{
-        font-size:24px;
-    }
-
-    th,td{
-        padding:10px;
-        font-size:14px;
-    }
-}
-</style>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Cybersecurity for Beginners: Complete Guide",
-  "description": "A beginner-friendly guide to cybersecurity, online threats, security principles and digital protection.",
-  "author": {
-    "@type": "Person",
-    "name": "Buden sha S"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TechSphere",
-    "url": "https://budenshas.github.io/TechSphere/"
-  },
-  "mainEntityOfPage": "https://budenshas.github.io/TechSphere/cybersecurity-for-beginners.html",
-  "datePublished": "2026-11-23",
-  "dateModified": "2026-11-23"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is cybersecurity?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cybersecurity is the practice of protecting computers, networks, applications and digital information from unauthorized access, attacks, damage and theft."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is cybersecurity important?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cybersecurity helps protect personal information, business data, digital accounts, computer systems and online services from threats."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is phishing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Phishing is a deceptive technique in which someone impersonates a trusted person or organization to trick people into revealing information or taking unsafe actions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can beginners learn cybersecurity?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beginners can learn networking, operating systems, security fundamentals, programming, encryption and ethical security practices through structured study and authorized practice environments."
-      }
-    }
-  ]
-}
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cybersecurity for Beginners | TechSphere</title>
+    <meta name="description" content="Learn cybersecurity fundamentals, online safety, network security, encryption, threats, security best practices and career paths with TechSphere.">
+    <meta name="keywords" content="cybersecurity for beginners, cyber security basics, network security, information security, online safety">
+    <meta name="author" content="TechSphere">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://budenshas.github.io/TechSphere/cybersecurity-for-beginners.html">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #080c14;
+            color: #e6edf7;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0d1422;
+            padding: 22px 6%;
+            border-bottom: 1px solid #202d42;
+        }
+
+        header h1 {
+            color: #63b3ff;
+            font-size: 30px;
+        }
+
+        header p {
+            color: #9eafc5;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 18px 6%;
+            background: #101827;
+            border-bottom: 1px solid #202d42;
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #e6edf7;
+            background: #182439;
+            padding: 10px 17px;
+            border-radius: 8px;
+            border: 1px solid #293b56;
+            transition: 0.25s;
+        }
+
+        nav a:hover {
+            background: #1676d2;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            padding: 65px 6%;
+            background: linear-gradient(135deg, #101c30, #080c14);
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            color: #63b3ff;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            max-width: 850px;
+            color: #c1cfe0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        section {
+            margin-bottom: 35px;
+            background: #101827;
+            border: 1px solid #202d42;
+            border-radius: 14px;
+            padding: 28px;
+        }
+
+        section h2 {
+            color: #63b3ff;
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            color: #9bcaff;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #c1cfe0;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            color: #c1cfe0;
+        }
+
+        li {
+            margin-bottom: 9px;
+        }
+
+        .highlight {
+            border-left: 4px solid #63b3ff;
+            padding: 15px;
+            background: #142238;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: #142238;
+            padding: 20px;
+            border: 1px solid #293b56;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        a.inline-link {
+            color: #63b3ff;
+        }
+
+        footer {
+            background: #0d1422;
+            text-align: center;
+            padding: 30px 15px;
+            border-top: 1px solid #202d42;
+            color: #9eafc5;
+        }
+
+        footer a {
+            color: #63b3ff;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            .hero h2 {
+                font-size: 29px;
+            }
+
+            nav {
+                gap: 8px;
+            }
+
+            nav a {
+                padding: 9px 12px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-    <div class="nav">
-
-        <a href="https://budenshas.github.io/TechSphere/index.html" class="logo">Tech<span>Sphere</span></a>
-
-        <nav class="nav-links" aria-label="Main navigation">
-            <a href="https://budenshas.github.io/TechSphere/index.html">Home</a>
-            <a href="https://budenshas.github.io/TechSphere/python.html">Python</a>
-            <a href="https://budenshas.github.io/TechSphere/what-is-ai.html">Artificial Intelligence</a>
-            <a href="https://budenshas.github.io/TechSphere/machine-learning.html">Machine Learning</a>
-            <a href="https://budenshas.github.io/TechSphere/about.html">About</a>
-        </nav>
-
-    </div>
+    <h1>TechSphere</h1>
+    <p>Explore. Learn. Build.</p>
 </header>
 
-<section class="hero">
-    <div class="hero-content">
+<nav>
+    <a href="https://budenshas.github.io/TechSphere/index.html">Home</a>
+    <a href="https://budenshas.github.io/TechSphere/python.html">Python</a>
+    <a href="https://budenshas.github.io/TechSphere/what-is-ai.html">Artificial Intelligence</a>
+    <a href="https://budenshas.github.io/TechSphere/machine-learning.html">Machine Learning</a>
+    <a href="https://budenshas.github.io/TechSphere/about.html">About</a>
+</nav>
 
-        <span class="badge">Cybersecurity • Beginner Guide</span>
-
-        <h1>Cybersecurity for Beginners: A Complete Guide</h1>
-
-        <p>
-            Discover how cybersecurity works, explore common digital threats,
-            understand essential security concepts and learn practical ways
-            to protect your digital life.
-        </p>
-
-        <div class="meta">
-            <span>By Buden sha S</span> •
-            <span>Beginner Level</span> •
-            <span>Educational Guide</span>
-        </div>
-
-    </div>
-</section>
+<div class="hero">
+    <h2>Cybersecurity for Beginners</h2>
+    <p>
+        Discover the fundamentals of cybersecurity, how digital information
+        is protected, common online threats, security practices and the
+        importance of building a safer digital world.
+    </p>
+</div>
 
 <main class="container">
 
-<div class="article-layout">
-
-<aside class="toc">
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#intro">What Is Cybersecurity?</a></li>
-        <li><a href="#importance">Why It Matters</a></li>
-        <li><a href="#cia">CIA Triad</a></li>
-        <li><a href="#threats">Cyber Threats</a></li>
-        <li><a href="#types">Types of Cybersecurity</a></li>
-        <li><a href="#concepts">Security Concepts</a></li>
-        <li><a href="#tools">Security Tools</a></li>
-        <li><a href="#practices">Best Practices</a></li>
-        <li><a href="#career">Career Opportunities</a></li>
-        <li><a href="#roadmap">Learning Roadmap</a></li>
-        <li><a href="#faq">FAQs</a></li>
-        <li><a href="#conclusion">Conclusion</a></li>
-    </ul>
-</aside>
-
-<article class="article">
-
-<section id="intro">
-<h2>What Is Cybersecurity?</h2>
-
-<p>
-Cybersecurity is the practice of protecting computers, servers, networks,
-applications and digital information from unauthorized access, cyberattacks,
-damage and theft.
-</p>
-
-<p>
-As people increasingly use digital technology for communication, banking,
-education, business, entertainment and cloud services, cybersecurity has
-become an important part of everyday life.
-</p>
-
-<p>
-Cybersecurity combines technology, processes and responsible human
-behavior to help protect digital systems and information.
-</p>
-
-<div class="highlight">
-<strong>Simple definition:</strong>
-<p>
-Cybersecurity means protecting digital systems, data and online accounts
-from unauthorized access, misuse and digital threats.
-</p>
-</div>
-</section>
-
-<section id="importance">
-<h2>Why Is Cybersecurity Important?</h2>
-
-<p>
-Cybersecurity helps individuals, organizations, governments and businesses
-protect their digital assets. Without appropriate protection, digital
-systems may face data breaches, service disruptions, financial losses
-and privacy problems.
-</p>
-
-<ul>
-<li><strong>Protects personal information:</strong> Helps safeguard private data and identity-related information.</li>
-<li><strong>Protects digital accounts:</strong> Reduces the risk of unauthorized account access.</li>
-<li><strong>Supports businesses:</strong> Helps organizations protect customer information and business systems.</li>
-<li><strong>Maintains availability:</strong> Helps keep systems and services operational.</li>
-<li><strong>Supports privacy:</strong> Helps control access to sensitive information.</li>
-<li><strong>Builds trust:</strong> Helps customers and users trust digital services.</li>
-</ul>
-</section>
-
-<section id="cia">
-<h2>The CIA Triad in Cybersecurity</h2>
-
-<p>
-The CIA Triad is one of the fundamental models of information security.
-It represents three important security principles: Confidentiality,
-Integrity and Availability.
-</p>
-
-<div class="card-grid">
-
-<div class="card">
-<h3>1. Confidentiality</h3>
-<p>
-Confidentiality ensures that information is accessible only to authorized
-people, systems or organizations.
-</p>
-<p><strong>Example:</strong> Restricting access to private records using permissions and authentication.</p>
-</div>
-
-<div class="card">
-<h3>2. Integrity</h3>
-<p>
-Integrity ensures that information remains accurate, consistent and
-protected against unauthorized modification.
-</p>
-<p><strong>Example:</strong> Using checksums to verify whether a downloaded file has changed.</p>
-</div>
-
-<div class="card">
-<h3>3. Availability</h3>
-<p>
-Availability ensures that authorized users can access systems,
-information and services when they need them.
-</p>
-<p><strong>Example:</strong> Maintaining backups and reliable infrastructure.</p>
-</div>
-
-</div>
-
-<div class="highlight">
-<strong>Remember:</strong> Confidentiality protects secrecy, Integrity
-protects correctness and Availability protects access.
-</div>
-</section>
-
-<section id="threats">
-<h2>Common Cybersecurity Threats</h2>
-
-<p>
-Cyber threats are activities or events that may compromise the security
-of digital systems, information or users.
-</p>
-
-<h3>1. Phishing</h3>
-<p>
-Phishing is a deceptive technique in which attackers impersonate trusted
-organizations, services or people to trick users into sharing information
-or taking unsafe actions.
-</p>
-<p>
-Phishing messages may appear through email, text messages, social media
-or websites. Users should independently verify unexpected requests.
-</p>
-
-<h3>2. Malware</h3>
-<p>
-Malware is malicious software designed to disrupt systems, compromise
-security, damage files or perform unauthorized activities.
-</p>
-<p>Common malware categories include:</p>
-<ul>
-<li><strong>Virus:</strong> Malicious code that can attach to files and spread when those files are executed.</li>
-<li><strong>Worm:</strong> Malware that can spread between systems.</li>
-<li><strong>Trojan:</strong> Malicious software disguised as legitimate software.</li>
-<li><strong>Spyware:</strong> Software that secretly collects information.</li>
-<li><strong>Ransomware:</strong> Malware that restricts access to data or systems and demands payment.</li>
-</ul>
-
-<h3>3. Social Engineering</h3>
-<p>
-Social engineering involves manipulating people into revealing information,
-granting access or performing actions that compromise security.
-It often exploits trust, urgency, fear or curiosity.
-</p>
-
-<h3>4. Denial-of-Service (DoS)</h3>
-<p>
-A denial-of-service attack attempts to make a system, network or service
-unavailable to legitimate users by overwhelming or disrupting it.
-</p>
-
-<h3>5. Data Breaches</h3>
-<p>
-A data breach occurs when protected or confidential information is
-accessed, exposed or disclosed without authorization.
-</p>
-
-<h3>6. Password Attacks</h3>
-<p>
-Password-related attacks involve attempts to obtain, guess or misuse
-account credentials. Strong, unique passwords and multifactor
-authentication help reduce account risks.
-</p>
-
-<h3>7. Insider Threats</h3>
-<p>
-Insider threats involve risks originating from people who have legitimate
-access to an organization's systems or information. These risks may be
-intentional or accidental.
-</p>
-</section>
-
-<section id="types">
-<h2>Types of Cybersecurity</h2>
-
-<div class="card-grid">
-
-<div class="card">
-<h3>Network Security</h3>
-<p>
-Protects computer networks from unauthorized access, misuse,
-disruption and security threats.
-</p>
-</div>
-
-<div class="card">
-<h3>Application Security</h3>
-<p>
-Focuses on protecting software applications throughout development,
-testing, deployment and maintenance.
-</p>
-</div>
-
-<div class="card">
-<h3>Information Security</h3>
-<p>
-Protects information against unauthorized access, modification,
-disclosure or destruction.
-</p>
-</div>
-
-<div class="card">
-<h3>Cloud Security</h3>
-<p>
-Protects cloud-based infrastructure, applications, services and data.
-</p>
-</div>
-
-<div class="card">
-<h3>Endpoint Security</h3>
-<p>
-Protects devices such as computers, smartphones and laptops
-connected to networks.
-</p>
-</div>
-
-<div class="card">
-<h3>Identity and Access Management</h3>
-<p>
-Manages identities, permissions, authentication and access
-to digital resources.
-</p>
-</div>
-
-<div class="card">
-<h3>Operational Security</h3>
-<p>
-Focuses on processes, policies and practices that help protect
-sensitive operational information.
-</p>
-</div>
-
-<div class="card">
-<h3>Security Awareness</h3>
-<p>
-Educates people about digital risks, security responsibilities
-and safe technology usage.
-</p>
-</div>
-
-</div>
-</section>
-
-<section id="concepts">
-<h2>Important Cybersecurity Concepts</h2>
-
-<h3>Authentication</h3>
-<p>
-Authentication verifies the identity of a user, device or system.
-</p>
-<p>Examples include passwords, biometric verification and security keys.</p>
-
-<h3>Authorization</h3>
-<p>
-Authorization determines what an authenticated user or system is
-allowed to access or perform.
-</p>
-
-<h3>Encryption</h3>
-<p>
-Encryption transforms readable information into an encoded form
-using cryptographic methods so that it cannot be understood without
-the appropriate key or process.
-</p>
-<p>
-Encryption helps protect information during storage and transmission.
-</p>
-
-<h3>Multi-Factor Authentication (MFA)</h3>
-<p>
-MFA requires users to provide more than one type of verification
-to access an account.
-</p>
-<p>
-Verification may involve something a user knows, something a user
-possesses or a characteristic used for identity verification.
-</p>
-
-<h3>Firewall</h3>
-<p>
-A firewall monitors and controls network traffic according to
-security rules. It can help restrict unwanted network connections.
-</p>
-
-<h3>Virtual Private Network (VPN)</h3>
-<p>
-A VPN establishes an encrypted connection between a device and
-a VPN endpoint. It can help protect network traffic on certain
-networks, but it does not guarantee anonymity or complete security.
-</p>
-
-<h3>Security Patches</h3>
-<p>
-Security patches are software updates that address vulnerabilities,
-bugs or other security-related problems.
-</p>
-
-<h3>Backup</h3>
-<p>
-A backup is a separate copy of information that can be used
-to recover data after accidental deletion, hardware failure
-or certain security incidents.
-</p>
-</section>
-
-<section id="tools">
-<h2>Cybersecurity Tools and Technologies</h2>
-
-<p>
-Cybersecurity professionals use various tools to monitor systems,
-manage security, investigate incidents and assess security
-in authorized environments.
-</p>
-
-<table>
-<thead>
-<tr>
-<th>Tool / Technology</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Wireshark</td>
-<td>Analyzes and visualizes network traffic for troubleshooting and security analysis.</td>
-</tr>
-<tr>
-<td>Nmap</td>
-<td>Helps administrators discover hosts and examine network services on authorized networks.</td>
-</tr>
-<tr>
-<td>Linux</td>
-<td>Provides an operating system environment widely used for administration, development and security learning.</td>
-</tr>
-<tr>
-<td>Firewall</td>
-<td>Controls network traffic according to configured rules.</td>
-</tr>
-<tr>
-<td>Antivirus / Endpoint Protection</td>
-<td>Helps detect, prevent and respond to malicious software and other endpoint threats.</td>
-</tr>
-<tr>
-<td>SIEM</td>
-<td>Collects and analyzes security logs and events from multiple sources.</td>
-</tr>
-<tr>
-<td>Cryptographic Tools</td>
-<td>Support encryption, hashing, digital signatures and related security operations.</td>
-</tr>
-<tr>
-<td>Password Manager</td>
-<td>Stores and helps manage unique passwords securely.</td>
-</tr>
-</tbody>
-</table>
-
-<div class="highlight">
-<p>
-<strong>Learning note:</strong> Use security tools only on systems,
-networks and accounts you own or have explicit permission to assess.
-Learning environments and authorized labs are appropriate places
-to develop technical skills.
-</p>
-</div>
-</section>
-
-<section id="practices">
-<h2>Cybersecurity Best Practices</h2>
-
-<p>
-Everyone can improve digital security by following a few
-important habits.
-</p>
-
-<ul>
-<li>Use strong, unique passwords for different accounts.</li>
-<li>Enable multifactor authentication wherever possible.</li>
-<li>Keep operating systems, applications and browsers updated.</li>
-<li>Avoid opening unexpected attachments or suspicious links.</li>
-<li>Verify requests for sensitive information independently.</li>
-<li>Use secure network connections and trusted services.</li>
-<li>Back up important information regularly.</li>
-<li>Review account activity and security notifications.</li>
-<li>Limit access to personal information.</li>
-<li>Install applications from trusted sources.</li>
-<li>Use appropriate security and privacy settings.</li>
-<li>Learn how to recognize online scams and impersonation attempts.</li>
-</ul>
-</section>
-
-<section id="career">
-<h2>Cybersecurity Career Opportunities</h2>
-
-<p>
-Cybersecurity offers different career paths for people interested
-in computer systems, networks, programming, digital security
-and information protection.
-</p>
-
-<table>
-<thead>
-<tr>
-<th>Career</th>
-<th>Typical Responsibilities</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Security Analyst</td>
-<td>Monitors security events, investigates alerts and supports incident response.</td>
-</tr>
-<tr>
-<td>Security Engineer</td>
-<td>Designs, implements and maintains security technologies and controls.</td>
-</tr>
-<tr>
-<td>Network Security Specialist</td>
-<td>Helps protect network infrastructure and monitor network security.</td>
-</tr>
-<tr>
-<td>Security Auditor</td>
-<td>Reviews security controls, processes, policies and compliance requirements.</td>
-</tr>
-<tr>
-<td>Incident Response Specialist</td>
-<td>Investigates security incidents and coordinates containment and recovery.</td>
-</tr>
-<tr>
-<td>Cloud Security Specialist</td>
-<td>Supports the protection of cloud infrastructure, services and data.</td>
-</tr>
-<tr>
-<td>Security Researcher</td>
-<td>Studies security vulnerabilities, defensive techniques and system security.</td>
-</tr>
-<tr>
-<td>Security Consultant</td>
-<td>Advises organizations on security risks, controls and improvements.</td>
-</tr>
-</tbody>
-</table>
-
-</section>
-
-<section id="roadmap">
-<h2>Cybersecurity Learning Roadmap for Beginners</h2>
-
-<p>
-If you are starting from zero, build your knowledge gradually.
-Understanding computer fundamentals makes advanced security
-topics easier to learn.
-</p>
-
-<h3>Step 1: Computer Fundamentals</h3>
-<ul>
-<li>Computer hardware and software</li>
-<li>Operating systems</li>
-<li>Files and directories</li>
-<li>Basic troubleshooting</li>
-</ul>
-
-<h3>Step 2: Networking Fundamentals</h3>
-<ul>
-<li>IP addresses</li>
-<li>DNS</li>
-<li>HTTP and HTTPS</li>
-<li>TCP and UDP</li>
-<li>Routers and switches</li>
-</ul>
-
-<h3>Step 3: Learn Linux</h3>
-<ul>
-<li>Terminal fundamentals</li>
-<li>File permissions</li>
-<li>Processes</li>
-<li>Basic system administration</li>
-</ul>
-
-<h3>Step 4: Learn Programming</h3>
-<ul>
-<li>Python fundamentals</li>
-<li>Variables and data types</li>
-<li>Conditions and loops</li>
-<li>Functions</li>
-<li>Basic automation</li>
-</ul>
-
-<h3>Step 5: Cybersecurity Fundamentals</h3>
-<ul>
-<li>CIA Triad</li>
-<li>Authentication and authorization</li>
-<li>Encryption and hashing</li>
-<li>Firewalls</li>
-<li>Security policies</li>
-<li>Threats and vulnerabilities</li>
-</ul>
-
-<h3>Step 6: Defensive Security</h3>
-<ul>
-<li>Log analysis</li>
-<li>Security monitoring</li>
-<li>Incident response fundamentals</li>
-<li>Backup and recovery</li>
-<li>Endpoint protection</li>
-</ul>
-
-<h3>Step 7: Practice Responsibly</h3>
-<p>
-Use structured cybersecurity courses, simulated environments,
-educational labs and systems where you have explicit authorization.
-Document what you learn and build small defensive projects.
-</p>
-
-<h3>Step 8: Build Your Portfolio</h3>
-<ul>
-<li>Document a basic network security learning project.</li>
-<li>Create a Python program for analyzing sample security logs.</li>
-<li>Write a guide explaining MFA and password security.</li>
-<li>Document a Linux security fundamentals lab.</li>
-<li>Learn to explain security concepts clearly.</li>
-</ul>
-</section>
-
-<section id="faq">
-<h2>Frequently Asked Questions</h2>
-
-<div class="faq">
-<h3>1. What is cybersecurity in simple words?</h3>
-<p>
-Cybersecurity is the protection of computers, networks, digital
-accounts and information against unauthorized access and threats.
-</p>
-</div>
-
-<div class="faq">
-<h3>2. Is cybersecurity difficult for beginners?</h3>
-<p>
-Cybersecurity can be challenging, but beginners can learn it
-gradually by starting with computer basics, networking,
-operating systems and security fundamentals.
-</p>
-</div>
-
-<div class="faq">
-<h3>3. Do I need programming to learn cybersecurity?</h3>
-<p>
-Programming is not mandatory for every cybersecurity role,
-but learning Python and basic scripting can help with automation,
-analysis and understanding software.
-</p>
-</div>
-
-<div class="faq">
-<h3>4. Which programming language is useful for cybersecurity?</h3>
-<p>
-Python is a useful starting point because it is readable
-and supports automation, data processing and security-related
-educational projects.
-</p>
-</div>
-
-<div class="faq">
-<h3>5. What is phishing?</h3>
-<p>
-Phishing is a deceptive attempt to impersonate a trusted source
-to trick someone into sharing information or taking unsafe actions.
-</p>
-</div>
-
-<div class="faq">
-<h3>6. What is the difference between cybersecurity and information security?</h3>
-<p>
-Cybersecurity focuses on protecting digital systems, networks,
-applications and information in digital environments.
-Information security focuses on protecting information in any form,
-including digital and physical records.
-</p>
-</div>
-
-<div class="faq">
-<h3>7. Can I learn cybersecurity at home?</h3>
-<p>
-Yes. You can learn cybersecurity fundamentals through books,
-online courses, educational labs, documentation and
-authorized practice environments.
-</p>
-</div>
-
-<div class="faq">
-<h3>8. Is cybersecurity a good career field?</h3>
-<p>
-Cybersecurity is an important field because organizations
-need to protect systems, data, services and digital operations.
-Career opportunities vary by skills, experience, location
-and employer requirements.
-</p>
-</div>
-
-<div class="faq">
-<h3>9. What should I learn first in cybersecurity?</h3>
-<p>
-Start with computer fundamentals, networking, operating systems,
-Linux, programming basics and fundamental security principles.
-</p>
-</div>
-
-<div class="faq">
-<h3>10. What is ethical cybersecurity practice?</h3>
-<p>
-Ethical cybersecurity practice involves learning, testing,
-analyzing or improving security while respecting authorization,
-privacy, laws and the rights of others.
-</p>
-</div>
-
-</section>
-
-<section id="conclusion">
-<h2>Conclusion</h2>
-
-<p>
-Cybersecurity is an essential part of the modern digital world.
-It helps protect personal information, business systems,
-networks, applications and online services.
-</p>
-
-<p>
-Understanding cybersecurity starts with fundamental concepts
-such as the CIA Triad, authentication, encryption, network security
-and awareness of common threats.
-</p>
-
-<p>
-By learning computer fundamentals, networking, Linux, Python
-and defensive security practices, beginners can gradually
-build their knowledge and explore cybersecurity careers.
-</p>
-
-<div class="cta">
-<h2>Continue Learning with TechSphere</h2>
-
-<p>
-Explore more beginner-friendly guides on programming,
-Artificial Intelligence and Machine Learning.
-Build your technology knowledge one step at a time.
-</p>
-
-<ul>
-<li><a href="https://budenshas.github.io/TechSphere/python.html">Learn Python Programming</a></li>
-<li><a href="https://budenshas.github.io/TechSphere/what-is-ai.html">Explore Artificial Intelligence</a></li>
-<li><a href="https://budenshas.github.io/TechSphere/machine-learning.html">Learn Machine Learning</a></li>
-<li><a href="https://budenshas.github.io/TechSphere/web-development-for-beginners.html">Learn Web Development</a></li>
-<li><a href="https://budenshas.github.io/TechSphere/future-technology-for-beginners.html">Explore Future Technology</a></li>
-<li><a href="https://budenshas.github.io/TechSphere/index.html">Explore TechSphere</a></li>
-</ul>
-</div>
-
-</section>
-
-</article>
-</div>
+    <section>
+        <h2>1. What Is Cybersecurity?</h2>
+
+        <p>
+            Cybersecurity is the practice of protecting computers, networks,
+            applications, devices and digital information from unauthorized
+            access, damage, theft and other digital threats.
+        </p>
+
+        <p>
+            As people and organizations increasingly rely on technology,
+            cybersecurity plays an important role in protecting privacy,
+            maintaining trust and ensuring that digital systems operate safely.
+        </p>
+
+        <div class="highlight">
+            <strong>Simply put:</strong>
+            Cybersecurity helps protect digital systems and information
+            from unauthorized access and misuse.
+        </div>
+    </section>
+
+    <section>
+        <h2>2. The CIA Triad</h2>
+
+        <p>
+            The CIA Triad is one of the fundamental models used in information
+            security. It consists of three important principles.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Confidentiality</h3>
+                <p>
+                    Ensures that information is accessible only to authorized
+                    individuals or systems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Integrity</h3>
+                <p>
+                    Ensures that information remains accurate, complete and
+                    protected from unauthorized modification.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Availability</h3>
+                <p>
+                    Ensures that systems and information are accessible
+                    when authorized users need them.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Common Cybersecurity Threats</h2>
+
+        <h3>Phishing</h3>
+        <p>
+            Phishing involves deceptive messages or websites designed to
+            trick people into revealing sensitive information or taking
+            unsafe actions.
+        </p>
+
+        <h3>Malware</h3>
+        <p>
+            Malware is malicious software designed to disrupt systems,
+            steal information or perform unauthorized activities.
+        </p>
+
+        <h3>Ransomware</h3>
+        <p>
+            Ransomware is a type of malware that restricts access to files
+            or systems, often by encrypting data, and demands payment.
+        </p>
+
+        <h3>Social Engineering</h3>
+        <p>
+            Social engineering manipulates people into revealing information
+            or performing actions that compromise their security.
+        </p>
+
+        <h3>Password Attacks</h3>
+        <p>
+            These involve attempts to obtain or misuse account credentials.
+            Strong passwords and additional authentication help protect accounts.
+        </p>
+
+        <h3>Data Breaches</h3>
+        <p>
+            A data breach occurs when sensitive or confidential information
+            is accessed, disclosed or exposed without authorization.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. Types of Cybersecurity</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Network Security</h3>
+                <p>
+                    Protects computer networks against unauthorized access,
+                    misuse and security threats.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Application Security</h3>
+                <p>
+                    Protects software and applications through secure
+                    development, testing and maintenance.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cloud Security</h3>
+                <p>
+                    Protects cloud infrastructure, services, accounts
+                    and information.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Information Security</h3>
+                <p>
+                    Protects information against unauthorized access,
+                    alteration, disclosure and loss.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Endpoint Security</h3>
+                <p>
+                    Protects computers, mobile devices and other
+                    endpoints connected to networks.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Identity and Access Management</h3>
+                <p>
+                    Controls who can access digital resources and
+                    what permissions they are granted.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Essential Cybersecurity Technologies</h2>
+
+        <h3>Firewall</h3>
+        <p>
+            A firewall monitors and controls network traffic according
+            to configured security rules.
+        </p>
+
+        <h3>Encryption</h3>
+        <p>
+            Encryption transforms readable information into a protected
+            format that can be understood only through the appropriate
+            decryption process.
+        </p>
+
+        <h3>Antivirus and Endpoint Protection</h3>
+        <p>
+            These technologies help identify, prevent and respond to
+            malicious software and other threats.
+        </p>
+
+        <h3>Multi-Factor Authentication (MFA)</h3>
+        <p>
+            MFA requires more than one form of verification to help
+            protect accounts against unauthorized access.
+        </p>
+
+        <h3>Virtual Private Network (VPN)</h3>
+        <p>
+            A VPN creates an encrypted connection between a device
+            and a VPN endpoint, helping protect certain network
+            communications.
+        </p>
+    </section>
+
+    <section>
+        <h2>6. Cybersecurity Best Practices</h2>
+
+        <ul>
+            <li>Use strong and unique passwords for different accounts.</li>
+            <li>Enable multi-factor authentication whenever available.</li>
+            <li>Keep operating systems and applications updated.</li>
+            <li>Be careful with suspicious emails and unexpected links.</li>
+            <li>Download software from trustworthy sources.</li>
+            <li>Back up important files regularly.</li>
+            <li>Use secure Wi-Fi networks and protect network settings.</li>
+            <li>Never share passwords, OTPs or private account information.</li>
+            <li>Review account activity and security alerts.</li>
+            <li>Protect personal information when using websites and apps.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Cybersecurity Tools and Learning Resources</h2>
+
+        <p>
+            Cybersecurity professionals use different tools to monitor
+            systems, examine security events and improve protection.
+            Beginners should study these technologies in authorized,
+            educational environments.
+        </p>
+
+        <ul>
+            <li><strong>Wireshark:</strong> Network traffic analysis.</li>
+            <li><strong>Nmap:</strong> Network discovery and security auditing.</li>
+            <li><strong>OWASP:</strong> Web application security knowledge.</li>
+            <li><strong>Linux:</strong> Operating system and security fundamentals.</li>
+            <li><strong>Python:</strong> Programming, automation and data analysis.</li>
+            <li><strong>SIEM:</strong> Security event monitoring and analysis.</li>
+        </ul>
+
+        <div class="highlight">
+            Practice only on systems you own or have explicit permission
+            to assess. Use educational labs and focus on prevention,
+            detection and responsible security practices.
+        </div>
+    </section>
+
+    <section>
+        <h2>8. Cybersecurity Career Opportunities</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Security Analyst</h3>
+                <p>
+                    Monitors security events, investigates alerts
+                    and supports organizational security.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Security Engineer</h3>
+                <p>
+                    Designs, implements and maintains security
+                    systems and technologies.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Security Auditor</h3>
+                <p>
+                    Reviews security controls, policies and compliance
+                    with applicable requirements.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Incident Responder</h3>
+                <p>
+                    Helps organizations investigate, manage and
+                    recover from security incidents.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cloud Security Specialist</h3>
+                <p>
+                    Helps protect cloud environments, identities,
+                    configurations and infrastructure.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Application Security Specialist</h3>
+                <p>
+                    Helps developers identify and prevent security
+                    weaknesses in software.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>9. How to Start Learning Cybersecurity</h2>
+
+        <ol>
+            <li>Learn computer fundamentals.</li>
+            <li>Understand networking basics.</li>
+            <li>Study Linux and Windows fundamentals.</li>
+            <li>Learn programming basics, especially Python.</li>
+            <li>Understand common cybersecurity concepts.</li>
+            <li>Learn defensive security and monitoring.</li>
+            <li>Practice through authorized educational labs.</li>
+            <li>Build projects and document your learning.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>10. Conclusion</h2>
+
+        <p>
+            Cybersecurity is an essential part of modern technology.
+            It helps individuals, businesses and organizations
+            protect digital information and maintain trustworthy systems.
+        </p>
+
+        <p>
+            By learning computer networks, programming, security
+            fundamentals and responsible practices, beginners can
+            gradually develop useful cybersecurity knowledge.
+        </p>
+
+        <p>
+            Continuous learning, ethical responsibility and practical
+            experience are important foundations for a cybersecurity journey.
+        </p>
+    </section>
+
 </main>
 
 <footer>
+    <p>&copy; 2026 TechSphere. Explore. Learn. Build.</p>
 
-    <div class="logo">Tech<span>Sphere</span></div>
-
-    <p>Explore. Learn. Build.</p>
-
-    <div class="footer-links">
+    <p>
         <a href="https://budenshas.github.io/TechSphere/index.html">Home</a>
         <a href="https://budenshas.github.io/TechSphere/about.html">About</a>
         <a href="https://budenshas.github.io/TechSphere/contact.html">Contact</a>
         <a href="https://budenshas.github.io/TechSphere/privacy-policy.html">Privacy Policy</a>
         <a href="https://budenshas.github.io/TechSphere/terms.html">Terms</a>
         <a href="https://budenshas.github.io/TechSphere/disclaimer.html">Disclaimer</a>
-    </div>
-
-    <p>&copy; 2026 TechSphere. All rights reserved.</p>
-
+    </p>
 </footer>
 
 </body>
