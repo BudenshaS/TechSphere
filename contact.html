@@ -4,32 +4,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact TechSphere with feedback, suggestions and questions about technology and articles.">
-    <title>Contact TechSphere</title>
+
+    <!-- SEO -->
+    <title>Contact TechSphere | Feedback & Technology Enquiries</title>
+    <meta name="description" content="Contact TechSphere with feedback, suggestions, article ideas and questions about technology, programming, artificial intelligence and educational content.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="TechSphere">
+    <meta name="theme-color" content="#0b1120">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://budenshas.github.io/TechSphere/contact.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact TechSphere | Explore. Learn. Build.">
+    <meta property="og:description" content="Share feedback, suggestions, article ideas and questions with TechSphere.">
+    <meta property="og:url" content="https://budenshas.github.io/TechSphere/contact.html">
+    <meta property="og:site_name" content="TechSphere">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact TechSphere">
+    <meta name="twitter:description" content="Get in touch with TechSphere to share feedback, suggestions and technology ideas.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact TechSphere",
+        "description": "Contact TechSphere for feedback, suggestions and questions about educational technology content.",
+        "url": "https://budenshas.github.io/TechSphere/contact.html",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "TechSphere",
+            "url": "https://budenshas.github.io/TechSphere/"
+        }
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
+
     <style>
-        .contact-page { max-width: 1000px; margin: 70px auto; padding: 25px; }
-        .contact-hero { padding: 65px 40px; border-radius: 26px; background: linear-gradient(135deg,#102c35,#164e63,#18233d); margin-bottom: 40px; }
-        .contact-tag { color: #78f0d0; letter-spacing: 3px; text-transform: uppercase; font-size: 13px; }
-        .contact-hero h1 { font-size: clamp(38px,6vw,65px); margin: 20px 0; line-height: 1.15; }
-        .contact-hero p { color: #cbd5e1; font-size: 18px; line-height: 1.8; }
-        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
-        .contact-card { background: #101827; border: 1px solid #26364c; padding: 30px; border-radius: 20px; }
-        .contact-card h2 { color: #fff; margin-top: 0; }
-        .contact-card p { color: #cbd5e1; line-height: 1.8; }
-        .contact-info { margin-top: 25px; }
-        .contact-info h3 { color: #78f0d0; }
-        .contact-back { display: inline-block; margin-bottom: 25px; color: #78f0d0; text-decoration: none; }
-        .contact-note { border-left: 3px solid #49e3bc; background: #101d2a; border-radius: 10px; padding: 20px; margin-top: 25px; color: #cbd5e1; }
-        @media(max-width:700px) { .contact-grid { grid-template-columns: 1fr; } }
+        .contact-page {
+            max-width: 1000px;
+            margin: 70px auto;
+            padding: 25px;
+        }
+
+        .contact-hero {
+            padding: 65px 40px;
+            border-radius: 26px;
+            background: linear-gradient(135deg,#102c35,#164e63,#18233d);
+            margin-bottom: 40px;
+        }
+
+        .contact-tag {
+            color: #78f0d0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+
+        .contact-hero h1 {
+            font-size: clamp(38px,6vw,65px);
+            margin: 20px 0;
+            line-height: 1.15;
+        }
+
+        .contact-hero p {
+            color: #cbd5e1;
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 750px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .contact-card {
+            background: #101827;
+            border: 1px solid #26364c;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .contact-card h2 {
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .contact-card p {
+            color: #cbd5e1;
+            line-height: 1.8;
+        }
+
+        .contact-info {
+            margin-top: 25px;
+        }
+
+        .contact-info h3 {
+            color: #78f0d0;
+        }
+
+        .contact-back {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #78f0d0;
+            text-decoration: none;
+        }
+
+        .contact-back:hover {
+            text-decoration: underline;
+        }
+
+        .contact-note {
+            border-left: 3px solid #49e3bc;
+            background: #101d2a;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+            color: #cbd5e1;
+        }
+
+        .contact-card a {
+            color: #78f0d0;
+        }
+
+        @media(max-width:700px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-page {
+                margin: 30px auto;
+                padding: 15px;
+            }
+
+            .contact-hero {
+                padding: 40px 22px;
+            }
+
+            .contact-hero p {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
 <header class="navbar">
     <div class="container nav-container">
         <a href="index.html" class="logo">T<span>echSphere</span></a>
-        <nav>
+
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="index.html#topics">Explore</a>
             <a href="index.html#articles">Articles</a>
@@ -44,51 +176,95 @@
 
     <section class="contact-hero">
         <span class="contact-tag">Get in Touch</span>
+
         <h1>Contact TechSphere</h1>
-        <p>Have feedback, ideas or suggestions about technology or our website? We'd love to hear your thoughts.</p>
+
+        <p>
+            Have feedback, ideas or suggestions about technology or our website?
+            Your thoughts and suggestions can help us improve TechSphere
+            and its educational content.
+        </p>
     </section>
 
     <section class="contact-grid">
 
-        <div class="contact-card">
+        <article class="contact-card">
             <h2>Let's Connect</h2>
-            <p>TechSphere is a platform dedicated to exploring technology, sharing knowledge and discovering new ideas.</p>
+
+            <p>
+                TechSphere is a platform dedicated to exploring technology,
+                sharing knowledge and discovering new ideas through
+                accessible educational content.
+            </p>
 
             <div class="contact-info">
                 <h3>Feedback & Suggestions</h3>
-                <p>Share ideas for new articles, topics or improvements to the website.</p>
+
+                <p>
+                    Share ideas for new articles, topics, improvements
+                    or suggestions for the website.
+                </p>
             </div>
 
             <div class="contact-info">
                 <h3>Content Questions</h3>
-                <p>Questions or feedback about our educational articles and technology topics are welcome.</p>
+
+                <p>
+                    Questions or feedback about educational articles,
+                    programming guides and technology topics are welcome.
+                </p>
             </div>
 
             <div class="contact-info">
                 <h3>Collaboration</h3>
-                <p>Interested in contributing ideas or discussing technology? Get in touch.</p>
-            </div>
-        </div>
 
-        <div class="contact-card">
+                <p>
+                    Interested in sharing ideas or discussing educational
+                    technology content? You can reach out to TechSphere.
+                </p>
+            </div>
+        </article>
+
+        <article class="contact-card">
             <h2>Contact Information</h2>
-            <p>For enquiries, you can contact the website owner using the contact email published here.</p>
+
+            <p>
+                For enquiries, you can contact the website owner
+                using the contact email published on this page.
+            </p>
 
             <div class="contact-info">
                 <h3>Email</h3>
-                <p>Replace this text with your email address before publishing.</p>
+
+                <p>
+                    Replace this text with your actual contact email
+                    address before publishing.
+                </p>
             </div>
 
             <div class="contact-note">
-                <strong>Website feedback:</strong> Your suggestions can help improve TechSphere's educational content and user experience.
+                <strong>Website feedback:</strong>
+
+                <p>
+                    Your suggestions can help improve TechSphere's
+                    educational content, website features and user experience.
+                </p>
             </div>
 
             <div class="contact-info">
                 <h3>Explore TechSphere</h3>
-                <p>Discover articles about AI, programming, machine learning, cybersecurity, web development and future technology.</p>
-                <a href="index.html#articles" style="color:#78f0d0;">Explore Articles →</a>
+
+                <p>
+                    Discover educational articles about artificial
+                    intelligence, programming, machine learning,
+                    cybersecurity, web development and future technology.
+                </p>
+
+                <a href="index.html#articles">
+                    Explore Articles →
+                </a>
             </div>
-        </div>
+        </article>
 
     </section>
 
@@ -101,5 +277,6 @@
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
