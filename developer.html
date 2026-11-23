@@ -1,16 +1,68 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Developer | TechSphere</title>
-    <meta name="description" content="Meet the developer behind TechSphere, a technology knowledge platform.">
+    <!-- SEO -->
+    <title>Developer | TechSphere - Buden sha S</title>
+    <meta name="description" content="Discover the developer behind TechSphere, a technology learning platform exploring programming, artificial intelligence, cybersecurity and web development.">
+    <meta name="keywords" content="TechSphere developer, Buden sha S, TechSphere creator, web developer, technology website, programming, AI learning platform">
     <meta name="author" content="Buden sha S">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#080b14">
 
-    <link rel="icon" href="logo.png">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://budenshas.github.io/TechSphere/developer.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Developer | TechSphere">
+    <meta property="og:description" content="Meet the creator behind TechSphere, a technology learning and knowledge platform.">
+    <meta property="og:url" content="https://budenshas.github.io/TechSphere/developer.html">
+    <meta property="og:site_name" content="TechSphere">
+    <meta property="og:image" content="https://budenshas.github.io/TechSphere/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Developer | TechSphere">
+    <meta name="twitter:description" content="Discover the developer behind TechSphere and the vision behind this technology learning platform.">
+    <meta name="twitter:image" content="https://budenshas.github.io/TechSphere/logo.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "name": "Developer | TechSphere",
+        "url": "https://budenshas.github.io/TechSphere/developer.html",
+        "description": "Developer profile and information about the creator of TechSphere.",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Buden sha S",
+            "url": "https://budenshas.github.io/TechSphere/developer.html",
+            "description": "Creator and developer of TechSphere, a technology learning platform.",
+            "knowsAbout": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Web Development",
+                "SEO"
+            ]
+        },
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "TechSphere",
+            "url": "https://budenshas.github.io/TechSphere/"
+        }
+    }
+    </script>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,9 +191,10 @@
         }
     </style>
 </head>
+
 <body>
 
-<div id="scroll-progress"></div>
+<div id="scroll-progress" aria-hidden="true"></div>
 
 <!-- NAVBAR -->
 <header class="navbar" id="navbar">
@@ -152,13 +205,15 @@
         </a>
 
         <button class="menu-toggle" id="menu-toggle"
-                aria-label="Toggle navigation" aria-expanded="false">
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="nav-menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
 
-        <nav class="nav-menu" id="nav-menu">
+        <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
             <a href="index.html" class="nav-link">Home</a>
             <a href="index.html#explore" class="nav-link">Explore</a>
             <a href="index.html#articles" class="nav-link">Articles</a>
@@ -192,12 +247,17 @@
             <p class="developer-description">
                 I'm the developer behind TechSphere, a technology-focused
                 knowledge platform created to make technology easier to
-                explore and understand.
+                explore, understand and learn.
 
-                This website is a project built through learning,
+                TechSphere is a digital project built through learning,
                 creativity, experimentation and web development.
-                My goal is to continue exploring software development
-                and building useful digital experiences.
+                It brings together educational content covering
+                programming, artificial intelligence, cybersecurity,
+                machine learning and related technologies.
+
+                My goal is to continue exploring software development,
+                improving my technical skills and creating useful
+                digital experiences.
             </p>
 
             <div class="developer-divider"></div>
@@ -207,11 +267,12 @@
             </h3>
 
             <p class="developer-description">
-                TechSphere's frontend was developed using the following
-                technologies and tools.
+                TechSphere's frontend is built using modern web
+                technologies and design principles to create a
+                responsive and accessible browsing experience.
             </p>
 
-            <div class="developer-skills">
+            <div class="developer-skills" aria-label="Technologies and skills">
                 <span class="developer-skill">HTML5</span>
                 <span class="developer-skill">CSS3</span>
                 <span class="developer-skill">JavaScript</span>
@@ -223,29 +284,33 @@
             <div class="developer-divider"></div>
 
             <h3 class="developer-subtitle">
-                Project
+                Featured Project
             </h3>
 
             <div class="developer-project">
+
                 <h4>
                     <span class="gradient-text">TechSphere</span>
                 </h4>
 
                 <p>
-                    A technology knowledge website focused on
-                    artificial intelligence, programming,
+                    TechSphere is a technology knowledge website
+                    focused on artificial intelligence, programming,
                     cybersecurity, machine learning, web development
-                    and emerging technology.
+                    and emerging technologies.
 
-                    Designed to provide accessible learning
-                    resources and beginner-friendly guides.
+                    The platform aims to make technical concepts
+                    easier to explore through accessible content,
+                    informative articles and beginner-friendly guides.
                 </p>
 
                 <div class="developer-skills">
                     <span class="developer-skill">Web Development</span>
                     <span class="developer-skill">Technology</span>
+                    <span class="developer-skill">Educational Content</span>
                     <span class="developer-skill">Knowledge Platform</span>
                 </div>
+
             </div>
 
             <div class="developer-divider"></div>
@@ -257,15 +322,16 @@
             <p class="developer-description">
                 I am continuously learning, exploring programming
                 and developing projects to improve my technical
-                knowledge and problem-solving abilities.
+                knowledge, creativity and problem-solving abilities.
 
-                TechSphere represents one step in that journey.
+                TechSphere represents one step in my ongoing
+                journey of learning, building and exploring technology.
             </p>
 
             <div class="developer-actions">
 
                 <a href="index.html" class="btn btn-primary">
-                    Explore TechSphere ↗
+                    Explore TechSphere &rarr;
                 </a>
 
                 <a href="contact.html" class="btn btn-secondary">
@@ -290,8 +356,14 @@
     <div class="section-container">
 
         <div class="footer-bottom">
-            <p>© <span id="year"></span> TechSphere. All rights reserved.</p>
-            <p class="footer-bottom-right">Explore. Learn. Build.</p>
+            <p>
+                &copy; <span id="year"></span>
+                TechSphere. All rights reserved.
+            </p>
+
+            <p class="footer-bottom-right">
+                Explore. Learn. Build.
+            </p>
         </div>
 
     </div>
@@ -301,4 +373,3 @@
 
 </body>
 </html>
-```
