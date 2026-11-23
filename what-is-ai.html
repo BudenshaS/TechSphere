@@ -1,26 +1,94 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What Is Artificial Intelligence (AI)? A Beginner's Guide | TechSphere</title>
-    <meta name="description" content="Learn what Artificial Intelligence is, how AI works, its types, applications, benefits, challenges and future in this beginner-friendly guide.">
+
+    <!-- Primary SEO -->
+    <title>What Is Artificial Intelligence (AI)? Beginner's Guide | TechSphere</title>
+    <meta name="description" content="Discover what Artificial Intelligence (AI) is, how it works, types of AI, machine learning, deep learning, real-world applications, benefits, limitations and examples.">
+    <meta name="author" content="TechSphere">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#080b14">
+    <meta name="keywords" content="Artificial Intelligence, AI explained, what is AI, AI for beginners, machine learning, deep learning, AI applications, AI technology">
+
+    <!-- Canonical -->
     <link rel="canonical" href="https://budenshas.github.io/TechSphere/what-is-ai.html">
-    <meta property="og:title" content="What Is Artificial Intelligence? | TechSphere">
-    <meta property="og:description" content="A beginner-friendly guide to Artificial Intelligence, its types, applications and future.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="What Is Artificial Intelligence (AI)? A Beginner's Guide | TechSphere">
+    <meta property="og:description" content="Understand Artificial Intelligence, how it works, its types, applications, benefits, challenges and future.">
     <meta property="og:url" content="https://budenshas.github.io/TechSphere/what-is-ai.html">
     <meta property="og:type" content="article">
+    <meta property="og:site_name" content="TechSphere">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="What Is Artificial Intelligence? | TechSphere">
+    <meta name="twitter:description" content="A beginner-friendly guide to Artificial Intelligence, machine learning, applications and limitations.">
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "What Is Artificial Intelligence (AI)? A Beginner's Guide",
+      "description": "A beginner-friendly guide explaining Artificial Intelligence, how it works, its types, applications, benefits, limitations and future.",
+      "author": {
+        "@type": "Organization",
+        "name": "TechSphere"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TechSphere",
+        "url": "https://budenshas.github.io/TechSphere/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://budenshas.github.io/TechSphere/what-is-ai.html"
+      },
+      "url": "https://budenshas.github.io/TechSphere/what-is-ai.html",
+      "inLanguage": "en"
+    }
+    </script>
+
+    <!-- Structured Data: Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "TechSphere",
+          "item": "https://budenshas.github.io/TechSphere/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Artificial Intelligence Guide",
+          "item": "https://budenshas.github.io/TechSphere/what-is-ai.html"
+        }
+      ]
+    }
+    </script>
 
     <style>
         * {
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             padding: 0;
-            background: #0b0f19;
+            background: #080b14;
             color: #e5e7eb;
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.8;
@@ -28,34 +96,60 @@
 
         header {
             background: #111827;
-            padding: 22px;
+            padding: 22px 8%;
             border-bottom: 1px solid #263244;
         }
 
         header a {
-            color: #60a5fa;
+            color: #8ab4ff;
             text-decoration: none;
             font-weight: bold;
         }
 
+        nav {
+            max-width: 900px;
+            margin: 20px auto 0;
+            padding: 0 20px;
+        }
+
+        nav a {
+            color: #8ab4ff;
+            text-decoration: none;
+        }
+
         main {
-            max-width: 850px;
+            max-width: 950px;
             margin: auto;
             padding: 35px 20px;
         }
 
-        h1, h2 {
-            color: #ffffff;
-            line-height: 1.4;
+        article {
+            background: #111827;
+            border: 1px solid #263244;
+            border-radius: 14px;
+            padding: 30px;
+        }
+
+        h1, h2, h3 {
+            line-height: 1.5;
         }
 
         h1 {
+            color: #8ab4ff;
             font-size: 2.2rem;
         }
 
         h2 {
-            margin-top: 35px;
-            font-size: 1.5rem;
+            color: #c6d8ff;
+            margin-top: 38px;
+            font-size: 1.6rem;
+            border-bottom: 1px solid #263244;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #a9c7ff;
+            margin-top: 25px;
         }
 
         p {
@@ -67,23 +161,99 @@
             color: #cbd5e1;
         }
 
+        a {
+            color: #8ab4ff;
+        }
+
+        a:hover {
+            color: #c6d8ff;
+        }
+
         .intro {
             font-size: 1.1rem;
         }
 
         .example {
-            background: #111827;
+            background: #0c1220;
             padding: 18px;
             border-left: 4px solid #60a5fa;
             border-radius: 8px;
             margin: 20px 0;
         }
 
+        .note {
+            background: #172238;
+            padding: 18px;
+            border-left: 4px solid #8ab4ff;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .exercise {
+            background: #15251f;
+            padding: 18px;
+            border-left: 4px solid #55c49a;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .faq {
+            background: #0c1220;
+            border: 1px solid #263244;
+            border-radius: 10px;
+            padding: 18px;
+            margin: 20px 0;
+        }
+
+        .related {
+            background: #0c1220;
+            border: 1px solid #263244;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
         footer {
             text-align: center;
-            padding: 25px;
+            padding: 30px 20px;
             border-top: 1px solid #263244;
             color: #94a3b8;
+            margin-top: 30px;
+        }
+
+        footer a {
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        a:focus-visible,
+        summary:focus-visible {
+            outline: 2px solid #8ab4ff;
+            outline-offset: 4px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+
+            main {
+                padding: 20px 14px;
+            }
+
+            article {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
         }
     </style>
 </head>
@@ -94,129 +264,487 @@
     <a href="index.html">TechSphere</a> — Explore. Learn. Build.
 </header>
 
+<nav aria-label="Breadcrumb">
+    <a href="index.html">Home</a> &gt; Artificial Intelligence Guide
+</nav>
+
 <main>
 
     <article>
+
         <h1>What Is Artificial Intelligence (AI)? A Beginner's Guide</h1>
 
         <p class="intro">
             Artificial Intelligence (AI) is a technology that enables computers
-            and machines to perform tasks that typically require human
-            intelligence, such as learning, problem-solving, understanding
-            language and recognizing patterns.
+            and machines to perform tasks that typically require capabilities
+            associated with human intelligence, such as learning, problem-solving,
+            recognizing patterns, processing language and making predictions.
+        </p>
+
+        <p>
+            Artificial Intelligence is used in many modern technologies,
+            including virtual assistants, recommendation systems, chatbots,
+            image recognition, data analysis and automation. Understanding
+            its basic concepts can help beginners explore the rapidly
+            developing field of AI.
+        </p>
+
+        <h2>What Is Artificial Intelligence?</h2>
+
+        <p>
+            Artificial Intelligence is a field of computer science focused on
+            creating systems that can perform tasks such as analyzing information,
+            recognizing patterns, generating content, making predictions
+            and supporting decisions.
+        </p>
+
+        <p>
+            AI systems may use algorithms, rules, statistical models,
+            machine learning and other computational techniques to
+            process information and produce outputs.
+        </p>
+
+        <p>
+            Unlike traditional programs that follow explicitly defined
+            instructions for every operation, some AI systems can learn
+            patterns from data and use those patterns to perform tasks.
         </p>
 
         <h2>How Does Artificial Intelligence Work?</h2>
 
         <p>
-            Artificial Intelligence works by using algorithms, data and
-            computational methods to identify patterns, make predictions
-            and produce results. Many AI systems learn from examples
-            provided through training data.
+            Artificial Intelligence works through a combination of data,
+            algorithms, computational resources and models. The exact
+            process depends on the type of AI system being developed.
         </p>
 
-        <p>Common steps involved in an AI system include:</p>
+        <p>Common steps involved in many AI development workflows include:</p>
 
         <ul>
-            <li><strong>Data collection:</strong> Gathering information that an AI system can use.</li>
-            <li><strong>Data processing:</strong> Organizing and preparing information for analysis.</li>
-            <li><strong>Training:</strong> Learning patterns from data using algorithms.</li>
-            <li><strong>Prediction or output:</strong> Producing results based on learned patterns.</li>
-            <li><strong>Evaluation:</strong> Testing how accurately and reliably the system performs.</li>
+            <li><strong>Data collection:</strong> Gathering information from relevant sources.</li>
+            <li><strong>Data processing:</strong> Cleaning, organizing and preparing information.</li>
+            <li><strong>Model training:</strong> Using algorithms to learn patterns from data, when the system uses a learning-based approach.</li>
+            <li><strong>Inference:</strong> Using the trained model to produce predictions, responses or other outputs.</li>
+            <li><strong>Evaluation:</strong> Testing performance, reliability and limitations.</li>
         </ul>
 
+        <div class="example">
+            <strong>Example:</strong>
+            A recommendation system may analyze previously viewed content
+            and other relevant signals to suggest additional videos,
+            products or articles. Its recommendations are based on
+            patterns and the system's design, not human understanding.
+        </div>
+
         <h2>Types of Artificial Intelligence</h2>
+
+        <p>
+            AI is often categorized by its capabilities. The following
+            categories are commonly discussed in introductory AI education.
+        </p>
 
         <h3>1. Narrow AI</h3>
 
         <p>
-            Narrow AI is designed to perform specific tasks. Examples include
-            recommendation systems, voice assistants, image recognition
-            systems and AI chatbots.
+            Narrow AI, also called Artificial Narrow Intelligence (ANI),
+            is designed to perform specific tasks or a limited range
+            of tasks. Most AI applications currently used in the real
+            world fall within this category.
         </p>
 
-        <h3>2. General AI</h3>
+        <p>Examples include:</p>
+
+        <ul>
+            <li>Recommendation systems.</li>
+            <li>Voice assistants.</li>
+            <li>Image recognition tools.</li>
+            <li>Translation applications.</li>
+            <li>AI chatbots.</li>
+        </ul>
+
+        <h3>2. Artificial General Intelligence (AGI)</h3>
 
         <p>
-            Artificial General Intelligence (AGI) refers to a theoretical
-            AI system that could perform a broad range of intellectual
-            tasks at a level comparable to humans. It has not been achieved.
+            Artificial General Intelligence refers to a hypothetical
+            AI system capable of learning, understanding and performing
+            a broad range of intellectual tasks across different domains
+            at a level comparable to humans.
         </p>
 
-        <h3>3. Superintelligent AI</h3>
+        <p>
+            AGI remains a research goal and a debated concept.
+            There is no widely accepted demonstration of a system
+            that meets the full definition of human-level general AI.
+        </p>
+
+        <h3>3. Artificial Superintelligence</h3>
 
         <p>
-            Artificial Superintelligence is a hypothetical concept involving
-            AI that could exceed human capabilities across many areas.
-            It remains theoretical.
+            Artificial Superintelligence is a hypothetical concept
+            describing an AI system that could exceed human intellectual
+            capabilities across many or all domains.
+        </p>
+
+        <p>
+            Superintelligence is theoretical and is not an established
+            real-world AI capability.
         </p>
 
         <h2>Artificial Intelligence vs Machine Learning</h2>
 
         <p>
-            Artificial Intelligence is the broader field of developing systems
-            that can perform intelligent tasks. Machine Learning is a
-            subset of AI that allows systems to learn patterns from data
-            without being explicitly programmed for every task.
+            Artificial Intelligence is the broader field of developing
+            systems that perform tasks associated with intelligent behavior.
+            Machine Learning is a subset of AI that enables systems
+            to learn patterns from data using statistical and computational methods.
         </p>
 
         <div class="example">
-            <strong>Example:</strong> AI is the broader concept of an
-            intelligent system, while Machine Learning is one of the
-            methods that can help that system learn from information.
+            <strong>Example:</strong>
+            AI is the broader concept of an intelligent system.
+            Machine Learning is one approach used to develop AI
+            systems that learn patterns from data.
         </div>
+
+        <h3>What Is Machine Learning?</h3>
+
+        <p>
+            Machine Learning (ML) is a branch of Artificial Intelligence
+            that uses data and algorithms to identify patterns and
+            make predictions or decisions without requiring developers
+            to manually define every possible rule.
+        </p>
+
+        <p>
+            Machine Learning is commonly used in recommendation systems,
+            prediction, classification, fraud detection and data analysis.
+        </p>
+
+        <h3>What Is Deep Learning?</h3>
+
+        <p>
+            Deep Learning is a subset of Machine Learning that uses
+            neural networks with multiple layers to learn complex
+            patterns from data.
+        </p>
+
+        <p>
+            Deep Learning is used in applications such as image recognition,
+            speech processing, language models and some computer vision systems.
+        </p>
+
+        <h3>Relationship Between AI, ML and Deep Learning</h3>
+
+        <div class="example">
+            <p><strong>Artificial Intelligence (AI):</strong> The broader field.</p>
+            <p><strong>Machine Learning (ML):</strong> A subset of AI.</p>
+            <p><strong>Deep Learning (DL):</strong> A subset of Machine Learning.</p>
+        </div>
+
+        <h2>What Is Generative AI?</h2>
+
+        <p>
+            Generative AI is a category of AI systems designed to
+            generate new content based on learned patterns and input.
+            It can create text, images, audio, video and other forms
+            of content depending on the model.
+        </p>
+
+        <p>Examples of generative AI applications include:</p>
+
+        <ul>
+            <li>Text generation and writing assistance.</li>
+            <li>Image generation.</li>
+            <li>Code generation and programming assistance.</li>
+            <li>Audio and speech generation.</li>
+            <li>Summarization and content transformation.</li>
+        </ul>
+
+        <p>
+            Generative AI outputs are not necessarily accurate.
+            Generated content should be reviewed and verified,
+            especially when used for important decisions.
+        </p>
 
         <h2>Applications of Artificial Intelligence</h2>
 
+        <p>
+            AI is used across industries to support analysis,
+            automation, prediction, content generation and
+            decision-making workflows.
+        </p>
+
         <ul>
-            <li><strong>Healthcare:</strong> Supporting medical research, analysis and healthcare workflows.</li>
-            <li><strong>Education:</strong> Personalized learning, tutoring tools and educational assistance.</li>
-            <li><strong>Finance:</strong> Fraud detection, data analysis and risk assessment.</li>
-            <li><strong>Transportation:</strong> Traffic analysis and vehicle-assistance technologies.</li>
-            <li><strong>Cybersecurity:</strong> Identifying unusual activity and supporting security analysis.</li>
-            <li><strong>Business:</strong> Automation, customer support and data-driven decision-making.</li>
-            <li><strong>Software development:</strong> Code assistance, debugging support and documentation.</li>
+            <li>
+                <strong>Healthcare:</strong>
+                Supporting medical research, analysis, healthcare workflows
+                and selected clinical applications.
+            </li>
+
+            <li>
+                <strong>Education:</strong>
+                Supporting personalized learning, tutoring tools,
+                educational content and learning assistance.
+            </li>
+
+            <li>
+                <strong>Finance:</strong>
+                Supporting fraud detection, risk analysis,
+                forecasting and financial data analysis.
+            </li>
+
+            <li>
+                <strong>Transportation:</strong>
+                Supporting traffic analysis, route optimization
+                and vehicle-assistance technologies.
+            </li>
+
+            <li>
+                <strong>Cybersecurity:</strong>
+                Supporting anomaly detection, threat analysis
+                and security monitoring.
+            </li>
+
+            <li>
+                <strong>Business:</strong>
+                Supporting customer service, automation,
+                forecasting and business analysis.
+            </li>
+
+            <li>
+                <strong>Software Development:</strong>
+                Supporting code assistance, debugging,
+                testing, documentation and development workflows.
+            </li>
+
+            <li>
+                <strong>Agriculture:</strong>
+                Supporting crop analysis, agricultural monitoring
+                and data-driven farming decisions.
+            </li>
+
+            <li>
+                <strong>Manufacturing:</strong>
+                Supporting quality inspection, predictive maintenance
+                and production analysis.
+            </li>
         </ul>
 
         <h2>Benefits of Artificial Intelligence</h2>
 
+        <p>
+            AI can provide useful capabilities when designed,
+            evaluated and applied appropriately.
+        </p>
+
         <ul>
             <li>Helps automate repetitive tasks.</li>
-            <li>Can analyze large amounts of data.</li>
-            <li>Supports faster decision-making.</li>
-            <li>Can improve productivity in various industries.</li>
-            <li>Supports research, creativity and innovation.</li>
+            <li>Can analyze large amounts of information.</li>
+            <li>Can support faster information processing.</li>
+            <li>May improve productivity in selected workflows.</li>
+            <li>Supports research and experimentation.</li>
+            <li>Can assist with accessibility and communication.</li>
+            <li>May help organizations identify patterns in data.</li>
         </ul>
 
-        <h2>Challenges of Artificial Intelligence</h2>
+        <h2>Challenges and Limitations of Artificial Intelligence</h2>
+
+        <p>
+            AI systems also have limitations and risks.
+            Understanding these issues is important for
+            responsible development and use.
+        </p>
 
         <ul>
-            <li>Privacy and data protection concerns.</li>
-            <li>Bias in training data and AI outputs.</li>
-            <li>Incorrect or misleading AI-generated information.</li>
-            <li>Security and misuse risks.</li>
-            <li>Need for responsible development and human oversight.</li>
+            <li><strong>Privacy:</strong> AI systems may process sensitive or personal information.</li>
+            <li><strong>Bias:</strong> Data and model design may contribute to unfair or biased outcomes.</li>
+            <li><strong>Accuracy:</strong> AI systems may produce incorrect or misleading information.</li>
+            <li><strong>Security:</strong> AI systems can introduce or face security risks.</li>
+            <li><strong>Transparency:</strong> Some models are difficult to interpret or explain.</li>
+            <li><strong>Dependence:</strong> Overreliance on AI may reduce careful human review.</li>
+            <li><strong>Responsible use:</strong> AI applications require appropriate safeguards and oversight.</li>
         </ul>
+
+        <div class="note">
+            <strong>Important:</strong>
+            AI-generated content should not automatically be treated
+            as fact. Verify important information using reliable
+            sources and apply human judgment where appropriate.
+        </div>
+
+        <h2>How to Start Learning Artificial Intelligence</h2>
+
+        <p>
+            Beginners interested in Artificial Intelligence can
+            develop their knowledge through a structured learning path.
+        </p>
+
+        <ol>
+            <li>Learn basic programming concepts.</li>
+            <li>Start learning Python.</li>
+            <li>Understand mathematics, including statistics and probability.</li>
+            <li>Learn the fundamentals of Machine Learning.</li>
+            <li>Explore data analysis and visualization.</li>
+            <li>Study neural networks and Deep Learning.</li>
+            <li>Build small practical projects.</li>
+            <li>Explore AI tools, libraries and research gradually.</li>
+        </ol>
+
+        <h2>Beginner AI Learning Exercise</h2>
+
+        <div class="exercise">
+            <p>Use these questions to check your understanding:</p>
+
+            <ol>
+                <li>What is Artificial Intelligence?</li>
+                <li>How does Machine Learning differ from AI?</li>
+                <li>What is Deep Learning?</li>
+                <li>Give three real-world applications of AI.</li>
+                <li>What is Generative AI?</li>
+                <li>Identify two limitations of AI systems.</li>
+            </ol>
+
+            <p>
+                <strong>Learning tip:</strong>
+                Try answering these questions in your own words.
+                Understanding concepts is more valuable than memorizing definitions.
+            </p>
+        </div>
 
         <h2>The Future of Artificial Intelligence</h2>
 
         <p>
-            Artificial Intelligence continues to develop across software,
-            science, education, business and engineering. Future developments
-            may lead to more capable tools for automation, research,
-            accessibility and problem-solving. Responsible use, safety,
-            privacy and human oversight will remain important.
+            Artificial Intelligence continues to develop across
+            software, science, education, business, engineering
+            and other fields. Researchers and organizations are
+            exploring new ways to use AI for automation,
+            analysis, research and creative tasks.
         </p>
+
+        <p>
+            Future developments may improve AI capabilities,
+            but technical progress will also require attention
+            to privacy, safety, fairness, reliability,
+            accountability and human oversight.
+        </p>
+
+        <p>
+            Understanding both the capabilities and limitations
+            of AI will remain important as the technology evolves.
+        </p>
+
+        <h2>Frequently Asked Questions About AI</h2>
+
+        <section class="faq">
+            <h3>What is Artificial Intelligence in simple words?</h3>
+
+            <p>
+                Artificial Intelligence is technology that enables
+                computers to perform tasks such as recognizing patterns,
+                analyzing information, generating content and making predictions.
+            </p>
+        </section>
+
+        <section class="faq">
+            <h3>Is Artificial Intelligence the same as Machine Learning?</h3>
+
+            <p>
+                No. Artificial Intelligence is the broader field.
+                Machine Learning is a subset of AI that allows
+                systems to learn patterns from data.
+            </p>
+        </section>
+
+        <section class="faq">
+            <h3>Where is AI used in everyday life?</h3>
+
+            <p>
+                AI is used in recommendation systems, search engines,
+                navigation applications, spam filters, virtual assistants,
+                translation tools and many other applications.
+            </p>
+        </section>
+
+        <section class="faq">
+            <h3>Can AI make mistakes?</h3>
+
+            <p>
+                Yes. AI systems can produce inaccurate, incomplete,
+                outdated or misleading outputs. Important information
+                should be independently verified.
+            </p>
+        </section>
+
+        <section class="faq">
+            <h3>Can beginners learn Artificial Intelligence?</h3>
+
+            <p>
+                Yes. Beginners can start with programming fundamentals,
+                Python, basic mathematics and introductory Machine Learning
+                before exploring advanced AI topics.
+            </p>
+        </section>
+
+        <section class="faq">
+            <h3>What is Generative AI?</h3>
+
+            <p>
+                Generative AI refers to AI systems that generate
+                new content such as text, images, audio or code
+                based on patterns learned from data.
+            </p>
+        </section>
 
         <h2>Conclusion</h2>
 
         <p>
-            Artificial Intelligence is one of the important technologies
-            shaping the modern digital world. Understanding its basic
-            concepts, applications, benefits and limitations can help
-            beginners build a foundation for learning AI, Machine Learning,
-            Data Science and other technology fields.
+            Artificial Intelligence is an important field of
+            computer science that is influencing many areas
+            of the modern digital world.
         </p>
+
+        <p>
+            By understanding AI fundamentals, Machine Learning,
+            Deep Learning, Generative AI, real-world applications
+            and limitations, beginners can build a foundation
+            for exploring advanced technology topics.
+        </p>
+
+        <p>
+            Learning programming, practicing concepts and building
+            projects can help develop practical skills for
+            understanding and working with AI.
+        </p>
+
+        <section class="related">
+            <h2>Explore More on TechSphere</h2>
+
+            <ul>
+                <li>
+                    <a href="python.html">
+                        Learn Python Programming
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        Explore the TechSphere Homepage
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About TechSphere
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact TechSphere
+                    </a>
+                </li>
+            </ul>
+        </section>
 
     </article>
 
@@ -224,7 +752,17 @@
 
 <footer>
     <p>TechSphere — Explore. Learn. Build.</p>
-    <p>© 2026 TechSphere. All rights reserved.</p>
+
+    <p>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="disclaimer.html">Disclaimer</a>
+    </p>
+
+    <p>&copy; 2026 TechSphere. All rights reserved.</p>
 </footer>
 
 </body>
