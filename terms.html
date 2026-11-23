@@ -7,7 +7,7 @@
 
     <!-- SEO -->
     <title>Terms & Conditions | TechSphere</title>
-    <meta name="description" content="Read the TechSphere Terms and Conditions governing website access, educational content, responsible use, intellectual property and external links.">
+    <meta name="description" content="Read TechSphere's Terms and Conditions covering website usage, educational content, responsible use, intellectual property, external links and limitations.">
     <meta name="robots" content="index, follow">
     <meta name="author" content="TechSphere">
     <meta name="theme-color" content="#0b1120">
@@ -18,7 +18,7 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Terms & Conditions | TechSphere">
-    <meta property="og:description" content="Review the terms and guidelines governing the use of TechSphere and its educational content.">
+    <meta property="og:description" content="Review the Terms and Conditions governing access to and use of TechSphere's educational technology website.">
     <meta property="og:url" content="https://budenshas.github.io/TechSphere/terms.html">
     <meta property="og:site_name" content="TechSphere">
 
@@ -55,7 +55,7 @@
         .policy-banner {
             padding: 55px 35px;
             border-radius: 24px;
-            background: linear-gradient(135deg,#111c35,#30245e,#102e40);
+            background: linear-gradient(135deg, #111c35, #30245e, #102e40);
             margin-bottom: 35px;
         }
 
@@ -67,7 +67,7 @@
         }
 
         .policy-banner h1 {
-            font-size: clamp(36px,5vw,58px);
+            font-size: clamp(36px, 5vw, 58px);
             margin: 20px 0;
         }
 
@@ -112,7 +112,11 @@
             margin: 25px 0;
         }
 
-        @media(max-width:600px) {
+        .policy-note p {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 600px) {
             .policy-page {
                 margin: 30px auto;
                 padding: 15px;
@@ -129,7 +133,9 @@
 
 <header class="navbar">
     <div class="container nav-container">
-        <a href="index.html" class="logo">T<span>echSphere</span></a>
+        <a href="index.html" class="logo" aria-label="TechSphere Home">
+            T<span>echSphere</span>
+        </a>
 
         <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
@@ -142,19 +148,23 @@
 
 <main class="policy-page">
 
-    <a href="index.html" class="policy-back">← Back to Home</a>
+    <a href="index.html" class="policy-back">
+        &larr; Back to Home
+    </a>
 
     <section class="policy-banner">
         <span>Website Guidelines</span>
 
-        <h1>Terms & Conditions</h1>
+        <h1>Terms &amp; Conditions</h1>
 
         <p>
-            Terms and guidelines governing access to and use
-            of the TechSphere website.
+            Understand the terms and guidelines governing
+            access to and use of the TechSphere website.
         </p>
 
-        <p><strong>Last updated:</strong> November 23, 2026</p>
+        <p>
+            <strong>Last updated:</strong> November 23, 2026
+        </p>
     </section>
 
     <article class="policy-content">
@@ -179,7 +189,7 @@
 
         <p>
             The website is intended to provide general educational
-            information and encourage technology learning.
+            information, learning resources and technology insights.
         </p>
 
         <h2>3. Educational Content Disclaimer</h2>
@@ -209,9 +219,15 @@
             <li>Using the website for unlawful purposes.</li>
             <li>Attempting unauthorized access to website systems.</li>
             <li>Interfering with website availability or operation.</li>
-            <li>Uploading or transmitting malicious code through any website functionality.</li>
-            <li>Using website content in ways that violate applicable laws or rights.</li>
+            <li>Transmitting malicious code through website functionality.</li>
+            <li>Violating applicable laws or the rights of others.</li>
+            <li>Misusing website content or resources.</li>
         </ul>
+
+        <p>
+            TechSphere reserves the right to take reasonable steps
+            to protect the website from misuse, where applicable.
+        </p>
 
         <h2>5. Intellectual Property</h2>
 
@@ -238,14 +254,15 @@
 
         <p>
             TechSphere may include links to third-party websites,
-            tools or resources for informational purposes.
-            These external websites operate independently.
+            tools or resources for informational and educational
+            purposes. These external websites operate independently.
         </p>
 
         <p>
             TechSphere does not control or guarantee the content,
-            availability, services or policies of external websites.
-            Visitors access third-party websites at their own discretion.
+            availability, services, accuracy or policies of
+            external websites. Visitors access third-party
+            websites at their own discretion.
         </p>
 
         <h2>7. Limitation of Liability</h2>
@@ -264,7 +281,15 @@
             by applicable law.
         </p>
 
-        <h2>8. Changes to These Terms</h2>
+        <h2>8. Website Availability</h2>
+
+        <p>
+            TechSphere may experience interruptions, technical
+            issues, maintenance or temporary unavailability.
+            We do not guarantee uninterrupted access to the website.
+        </p>
+
+        <h2>9. Changes to These Terms</h2>
 
         <p>
             These Terms and Conditions may be updated or revised
@@ -273,11 +298,10 @@
         </p>
 
         <p>
-            Visitors are encouraged to review this page
-            periodically.
+            Visitors are encouraged to review this page periodically.
         </p>
 
-        <h2>9. Contact</h2>
+        <h2>10. Contact</h2>
 
         <p>
             For questions, feedback or enquiries about these Terms,
@@ -286,7 +310,6 @@
 
         <div class="policy-note">
             <strong>Notice:</strong>
-
             <p>
                 These Terms and Conditions are a general website
                 template and are not legal advice. Review them
@@ -301,7 +324,10 @@
 
 <footer class="footer">
     <div class="container">
-        <p>© <span id="year"></span> TechSphere. Explore. Learn. Build.</p>
+        <p>
+            &copy; <span id="year"></span>
+            TechSphere. Explore. Learn. Build.
+        </p>
     </div>
 </footer>
 
