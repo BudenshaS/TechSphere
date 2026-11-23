@@ -5,388 +5,244 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Web Development Fundamentals: Complete Beginner Guide | TechSphere</title>
-<meta name="description" content="Learn web development fundamentals from scratch. Explore HTML, CSS, JavaScript, frontend, backend, databases, web hosting and a complete beginner learning roadmap.">
-<meta name="keywords" content="web development for beginners, HTML, CSS, JavaScript, frontend development, backend development, full stack development, web design">
-<meta name="author" content="Buden sha S">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0b0f19">
+<title>Web Development for Beginners | TechSphere</title>
+
+<meta name="description" content="Learn web development from scratch. Explore HTML, CSS, JavaScript, frontend, backend, databases, hosting and more with TechSphere.">
 
 <link rel="canonical" href="https://budenshas.github.io/TechSphere/web-development-for-beginners.html">
 
-<meta property="og:title" content="Web Development Fundamentals | TechSphere">
-<meta property="og:description" content="Learn the fundamentals of web development, HTML, CSS, JavaScript and modern web technologies.">
-<meta property="og:type" content="article">
+<meta property="og:title" content="Web Development for Beginners | TechSphere">
+<meta property="og:description" content="A beginner-friendly guide to web development, HTML, CSS, JavaScript and more.">
 <meta property="og:url" content="https://budenshas.github.io/TechSphere/web-development-for-beginners.html">
-<meta property="og:site_name" content="TechSphere">
-
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Web Development Fundamentals | TechSphere">
-<meta name="twitter:description" content="A beginner-friendly guide to learning web development.">
+<meta property="og:type" content="article">
 
 <style>
-*{
+* {
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#0b0f19;
-    color:#e5e7eb;
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b1120;
+    color:#e6edf7;
     line-height:1.8;
 }
 
-a{
-    color:#60a5fa;
-    text-decoration:none;
+header {
+    background:#0d1422;
+    padding:22px 6%;
+    border-bottom:1px solid #202d42;
 }
 
-a:hover{
-    color:#93c5fd;
-    text-decoration:underline;
+header h1 {
+    color:#63b3ff;
+    font-size:30px;
 }
 
-header{
-    background:#111827;
-    border-bottom:1px solid #263246;
-    padding:18px 7%;
-    position:sticky;
-    top:0;
-    z-index:100;
+header p {
+    color:#9eafc5;
 }
 
-.nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.logo{
-    font-size:24px;
-    font-weight:bold;
-    color:#fff;
-    letter-spacing:1px;
-}
-
-.logo span{
-    color:#60a5fa;
-}
-
-.nav-links{
+nav {
     display:flex;
     flex-wrap:wrap;
-    gap:18px;
+    gap:12px;
+    padding:18px 6%;
+    background:#101827;
+    border-bottom:1px solid #202d42;
 }
 
-.nav-links a{
-    color:#d1d5db;
-    font-size:14px;
-}
-
-.nav-links a:hover{
-    color:#60a5fa;
-}
-
-.hero{
-    padding:85px 7% 65px;
-    background:linear-gradient(135deg,#101827,#111827,#14243d);
-    border-bottom:1px solid #263246;
-}
-
-.hero-content{
-    max-width:900px;
-    margin:auto;
-}
-
-.badge{
+nav a {
     display:inline-block;
-    padding:7px 14px;
-    background:#172554;
-    border:1px solid #1e40af;
-    color:#93c5fd;
-    border-radius:30px;
-    font-size:13px;
-    margin-bottom:20px;
+    text-decoration:none;
+    color:#e6edf7;
+    background:#182439;
+    padding:10px 17px;
+    border-radius:8px;
+    border:1px solid #293b56;
+    transition:0.25s;
 }
 
-.hero h1{
-    font-size:clamp(32px,5vw,52px);
-    line-height:1.2;
-    color:#fff;
-    margin-bottom:20px;
+nav a:hover {
+    background:#1676d2;
+    color:white;
+    transform:translateY(-2px);
 }
 
-.hero p{
-    color:#cbd5e1;
-    font-size:18px;
-    max-width:750px;
-}
-
-.meta{
-    margin-top:20px;
-    font-size:14px;
-    color:#94a3b8;
-}
-
-.container{
-    max-width:1050px;
+.container {
+    max-width:1100px;
     margin:auto;
-    padding:45px 22px;
+    padding:35px 20px;
 }
 
-.article-layout{
-    display:grid;
-    grid-template-columns:260px minmax(0,1fr);
-    gap:35px;
-    align-items:start;
-}
-
-.toc{
-    background:#111827;
-    border:1px solid #263246;
+.hero {
+    background:linear-gradient(135deg,#13233d,#172c4b);
+    border:1px solid #293b56;
     border-radius:14px;
-    padding:24px;
-    position:sticky;
-    top:100px;
+    padding:35px;
+    margin-bottom:30px;
 }
 
-.toc h2{
-    font-size:18px;
-    margin-bottom:15px;
-    color:#fff;
+.hero h2 {
+    font-size:34px;
+    color:#63b3ff;
+    margin-bottom:12px;
 }
 
-.toc ul{
-    list-style:none;
-}
-
-.toc li{
-    margin:10px 0;
-}
-
-.toc a{
+.hero p {
     color:#cbd5e1;
-    font-size:14px;
 }
 
-.toc a:hover{
-    color:#60a5fa;
+h2.section-title {
+    color:#63b3ff;
+    margin:35px 0 15px;
 }
 
-.article{
-    min-width:0;
+h3 {
+    color:#b5d9ff;
+    margin:20px 0 10px;
 }
 
-.article section{
-    margin-bottom:45px;
-    scroll-margin-top:100px;
+p {
+    margin-bottom:16px;
 }
 
-.article h2{
-    font-size:28px;
-    margin-bottom:18px;
-    color:#fff;
+ul,ol {
+    padding-left:25px;
+    margin-bottom:20px;
 }
 
-.article h3{
-    font-size:21px;
-    margin:25px 0 12px;
+li {
+    margin-bottom:8px;
+}
+
+.card {
+    background:#111b2d;
+    border:1px solid #26354b;
+    padding:22px;
+    border-radius:12px;
+    margin:20px 0;
+}
+
+code {
+    background:#1c2940;
+    padding:3px 7px;
+    border-radius:5px;
     color:#93c5fd;
 }
 
-.article p{
-    margin-bottom:18px;
-    color:#cbd5e1;
-}
-
-.article ul,
-.article ol{
-    padding-left:25px;
-    margin:15px 0 22px;
-    color:#cbd5e1;
-}
-
-.article li{
-    margin-bottom:10px;
-}
-
-.highlight{
-    background:#111827;
-    border:1px solid #334155;
-    border-left:4px solid #60a5fa;
-    padding:20px;
+pre {
+    overflow-x:auto;
+    background:#080e19;
+    border:1px solid #293b56;
+    padding:18px;
     border-radius:10px;
-    margin:22px 0;
+    margin:15px 0;
+    color:#a5d6ff;
 }
 
-.highlight p:last-child{
-    margin-bottom:0;
+pre code {
+    background:none;
+    padding:0;
 }
 
-.card-grid{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:18px;
+.toc {
+    background:#111b2d;
+    border:1px solid #26354b;
+    border-radius:12px;
+    padding:22px;
     margin:25px 0;
 }
 
-.card{
-    background:#111827;
-    border:1px solid #263246;
-    padding:22px;
-    border-radius:12px;
+.toc h2 {
+    color:#63b3ff;
+    margin-bottom:12px;
 }
 
-.card h3{
-    margin-top:0;
+.toc a {
+    color:#93c5fd;
+    text-decoration:none;
 }
 
-.card p:last-child{
-    margin-bottom:0;
+.toc a:hover {
+    text-decoration:underline;
 }
 
-pre{
-    background:#080c14;
-    border:1px solid #263246;
-    padding:20px;
-    border-radius:12px;
-    overflow-x:auto;
-    margin:20px 0;
+a.inline-link {
+    color:#63b3ff;
 }
 
-pre code{
-    color:#bfdbfe;
-    font-family:Consolas,monospace;
-    font-size:14px;
-    line-height:1.7;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin:20px 0;
-    background:#111827;
-}
-
-th,td{
-    border:1px solid #334155;
-    padding:14px;
-    text-align:left;
-    vertical-align:top;
-}
-
-th{
-    background:#172554;
-    color:#fff;
-}
-
-td{
-    color:#cbd5e1;
-}
-
-.faq{
-    border:1px solid #263246;
-    border-radius:12px;
-    padding:22px;
-    margin:15px 0;
-    background:#111827;
-}
-
-.faq h3{
-    margin-top:0;
-}
-
-.cta{
-    background:linear-gradient(135deg,#172554,#111827);
-    border:1px solid #334155;
-    padding:30px;
+.cta {
+    background:linear-gradient(135deg,#142641,#1c3556);
+    border:1px solid #345477;
     border-radius:14px;
-    margin-top:35px;
+    padding:30px;
+    margin:35px 0;
 }
 
-.cta h2{
-    margin-bottom:15px;
+.cta h2 {
+    color:#63b3ff;
+    margin-bottom:10px;
 }
 
-footer{
-    background:#080c14;
-    border-top:1px solid #263246;
-    padding:35px 7%;
+.cta a {
+    display:inline-block;
+    background:#1676d2;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+.cta a:hover {
+    background:#2589ec;
+}
+
+footer {
     text-align:center;
+    padding:30px 15px;
+    background:#0d1422;
+    border-top:1px solid #202d42;
+    color:#9eafc5;
 }
 
-footer p{
-    color:#94a3b8;
-    font-size:14px;
-    margin:8px 0;
+footer a {
+    color:#63b3ff;
+    text-decoration:none;
+    margin:5px;
 }
 
-.footer-links{
-    display:flex;
-    justify-content:center;
-    gap:18px;
-    flex-wrap:wrap;
-    margin:18px 0;
+footer a:hover {
+    text-decoration:underline;
 }
 
-.footer-links a{
-    font-size:14px;
-}
-
-@media(max-width:850px){
-    .article-layout{
-        grid-template-columns:1fr;
+@media(max-width:600px) {
+    header h1 {
+        font-size:25px;
     }
 
-    .toc{
-        position:static;
+    nav {
+        gap:8px;
     }
 
-    .card-grid{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:600px){
-    header{
-        padding:15px 5%;
-    }
-
-    .nav{
-        align-items:flex-start;
-    }
-
-    .nav-links{
-        gap:12px;
-    }
-
-    .hero{
-        padding:55px 5%;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .container{
-        padding:30px 16px;
-    }
-
-    .article h2{
-        font-size:24px;
-    }
-
-    th,td{
-        padding:10px;
+    nav a {
+        padding:9px 12px;
         font-size:14px;
+    }
+
+    .hero {
+        padding:22px;
+    }
+
+    .hero h2 {
+        font-size:27px;
+    }
+
+    .container {
+        padding:25px 15px;
     }
 }
 </style>
@@ -395,61 +251,17 @@ footer p{
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Web Development Fundamentals: Complete Beginner Guide",
-  "description": "A beginner-friendly guide to web development, HTML, CSS, JavaScript, frontend, backend, databases and hosting.",
+  "headline": "Web Development for Beginners",
+  "description": "A beginner-friendly guide to web development, HTML, CSS, JavaScript, frontend, backend and hosting.",
   "author": {
-    "@type": "Person",
-    "name": "Buden sha S"
+    "@type": "Organization",
+    "name": "TechSphere"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "TechSphere",
-    "url": "https://budenshas.github.io/TechSphere/"
+    "name": "TechSphere"
   },
-  "mainEntityOfPage": "https://budenshas.github.io/TechSphere/web-development-for-beginners.html",
-  "datePublished": "2026-11-23",
-  "dateModified": "2026-11-23"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is web development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Web development is the process of building, creating and maintaining websites and web applications."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What languages are used in web development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "HTML, CSS and JavaScript are the fundamental technologies used to create interactive websites. Backend development may use Python, Java, PHP, JavaScript and other programming languages."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between frontend and backend development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Frontend development builds the parts of a website users interact with. Backend development handles server-side logic, data processing and communication with databases and other services."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can beginners learn web development?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Beginners can learn web development by starting with HTML, CSS and JavaScript, building small projects and gradually learning backend development, databases and deployment."
-      }
-    }
-  ]
+  "mainEntityOfPage": "https://budenshas.github.io/TechSphere/web-development-for-beginners.html"
 }
 </script>
 
@@ -458,835 +270,381 @@ footer p{
 <body>
 
 <header>
-    <div class="nav">
-        <a href="https://budenshas.github.io/TechSphere/index.html" class="logo">Tech<span>Sphere</span></a>
-
-        <nav class="nav-links" aria-label="Main navigation">
-            <a href="https://budenshas.github.io/TechSphere/index.html">Home</a>
-            <a href="https://budenshas.github.io/TechSphere/python.html">Python</a>
-            <a href="https://budenshas.github.io/TechSphere/what-is-ai.html">Artificial Intelligence</a>
-            <a href="https://budenshas.github.io/TechSphere/machine-learning.html">Machine Learning</a>
-            <a href="https://budenshas.github.io/TechSphere/about.html">About</a>
-        </nav>
-    </div>
+    <h1>TechSphere</h1>
+    <p>Explore. Learn. Build.</p>
 </header>
 
-<section class="hero">
-    <div class="hero-content">
-        <span class="badge">Web Development • Beginner Guide</span>
+<nav>
+    <a href="https://budenshas.github.io/TechSphere/">Home</a>
+    <a href="https://budenshas.github.io/TechSphere/python.html">Python</a>
+    <a href="https://budenshas.github.io/TechSphere/what-is-ai.html">Artificial Intelligence</a>
+    <a href="https://budenshas.github.io/TechSphere/machine-learning.html">Machine Learning</a>
+    <a href="https://budenshas.github.io/TechSphere/about.html">About</a>
+</nav>
 
-        <h1>Web Development Fundamentals: A Complete Guide</h1>
+<div class="container">
 
-        <p>
-            Discover how websites are created, learn HTML, CSS and JavaScript,
-            explore frontend and backend development, understand databases
-            and follow a practical roadmap to start building websites.
-        </p>
+<div class="hero">
+    <h2>Web Development for Beginners</h2>
+    <p>
+        Learn how websites are created from scratch. Understand HTML, CSS,
+        JavaScript, frontend development, backend development, databases,
+        hosting and the tools used by modern web developers.
+    </p>
+</div>
 
-        <div class="meta">
-            <span>By Buden sha S</span> •
-            <span>Beginner Level</span> •
-            <span>Educational Guide</span>
-        </div>
-    </div>
-</section>
-
-<main class="container">
-
-<div class="article-layout">
-
-<aside class="toc">
+<div class="toc">
     <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#intro">What Is Web Development?</a></li>
-        <li><a href="#web">How Websites Work</a></li>
-        <li><a href="#types">Types of Development</a></li>
+    <ol>
+        <li><a href="#introduction">Introduction to Web Development</a></li>
         <li><a href="#html">HTML</a></li>
         <li><a href="#css">CSS</a></li>
         <li><a href="#javascript">JavaScript</a></li>
-        <li><a href="#frontend">Frontend</a></li>
-        <li><a href="#backend">Backend</a></li>
+        <li><a href="#frontend">Frontend Development</a></li>
+        <li><a href="#backend">Backend Development</a></li>
         <li><a href="#database">Databases</a></li>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#responsive">Responsive Design</a></li>
-        <li><a href="#hosting">Hosting and Deployment</a></li>
+        <li><a href="#tools">Web Development Tools</a></li>
+        <li><a href="#responsive">Responsive Web Design</a></li>
+        <li><a href="#hosting">Website Hosting</a></li>
         <li><a href="#roadmap">Learning Roadmap</a></li>
-        <li><a href="#faq">FAQs</a></li>
-        <li><a href="#conclusion">Conclusion</a></li>
-    </ul>
-</aside>
-
-<article class="article">
-
-<section id="intro">
-<h2>What Is Web Development?</h2>
-
-<p>
-Web development is the process of creating, building and maintaining
-websites and web applications that operate on the internet or
-within private networks.
-</p>
-
-<p>
-Web developers use programming languages, frameworks, tools,
-databases and web technologies to create digital experiences
-such as blogs, business websites, e-commerce platforms,
-online learning systems and web applications.
-</p>
-
-<p>
-Web development combines programming, design, problem-solving,
-user experience and technical knowledge to create useful
-and functional websites.
-</p>
-
-<div class="highlight">
-<strong>Simple definition:</strong>
-<p>
-Web development is the process of building and maintaining
-websites and web applications.
-</p>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+    </ol>
 </div>
-</section>
 
-<section id="web">
-<h2>How Does a Website Work?</h2>
+<section id="introduction">
+<h2 class="section-title">1. Introduction to Web Development</h2>
 
 <p>
-When someone visits a website, their browser and the website's
-server communicate to deliver the content and functionality
-the visitor needs.
+Web development is the process of creating websites and web applications.
+It includes designing website layouts, writing code, managing information,
+building interactive features and making websites available on the internet.
 </p>
-
-<ol>
-<li><strong>Browser request:</strong> The browser requests a web resource using an address such as a URL.</li>
-<li><strong>DNS lookup:</strong> DNS helps translate a domain name into an IP address.</li>
-<li><strong>Server communication:</strong> The browser communicates with the appropriate server.</li>
-<li><strong>Server processing:</strong> The server may process the request, retrieve data or generate content.</li>
-<li><strong>Response:</strong> The server returns resources such as HTML, CSS, JavaScript and images.</li>
-<li><strong>Rendering:</strong> The browser processes those resources and displays the website.</li>
-</ol>
-
-<div class="highlight">
-<p>
-A website may consist of static files, dynamically generated content
-or a combination of both.
-</p>
-</div>
-</section>
-
-<section id="types">
-<h2>Types of Web Development</h2>
-
-<div class="card-grid">
 
 <div class="card">
-<h3>Frontend Development</h3>
-<p>
-Creates the user-facing interface of websites and web applications,
-including layouts, buttons, navigation and interactive elements.
-</p>
-</div>
-
-<div class="card">
-<h3>Backend Development</h3>
-<p>
-Handles server-side logic, data processing, authentication,
-business rules and communication with databases.
-</p>
-</div>
-
-<div class="card">
-<h3>Full-Stack Development</h3>
-<p>
-Combines frontend and backend development to build
-complete web applications.
-</p>
-</div>
-
-<div class="card">
-<h3>Web Design</h3>
-<p>
-Focuses on visual presentation, layout, usability, typography,
-colors and user experience.
-</p>
-</div>
-
+<h3>Types of Web Development</h3>
+<ul>
+<li><strong>Frontend Development:</strong> The visible part of a website that users interact with.</li>
+<li><strong>Backend Development:</strong> The server-side logic that handles data and operations.</li>
+<li><strong>Full-Stack Development:</strong> Working with both frontend and backend technologies.</li>
+</ul>
 </div>
 </section>
 
 <section id="html">
-<h2>HTML: The Structure of a Website</h2>
+<h2 class="section-title">2. HTML – HyperText Markup Language</h2>
 
 <p>
-HTML stands for HyperText Markup Language. It is used to structure
-content on web pages.
+HTML is the standard markup language used to structure web pages.
+It defines headings, paragraphs, images, links, forms and other elements.
 </p>
 
-<p>
-HTML defines elements such as headings, paragraphs, images,
-links, lists, tables, forms and sections.
-</p>
-
-<h3>Basic HTML Example</h3>
+<h3>Example of HTML</h3>
 
 <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+&lt;html&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
     &lt;title&gt;My Website&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
-    &lt;p&gt;This is my first web page.&lt;/p&gt;
-    &lt;a href="https://example.com"&gt;
-        Visit Example
-    &lt;/a&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;Welcome to my website.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
 
-<h3>Important HTML Elements</h3>
-
-<ul>
-<li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> — headings</li>
-<li><code>&lt;p&gt;</code> — paragraphs</li>
-<li><code>&lt;a&gt;</code> — hyperlinks</li>
-<li><code>&lt;img&gt;</code> — images</li>
-<li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> — lists</li>
-<li><code>&lt;div&gt;</code> — generic container</li>
-<li><code>&lt;section&gt;</code> — section of content</li>
-<li><code>&lt;form&gt;</code> — user input forms</li>
-<li><code>&lt;button&gt;</code> — buttons</li>
-</ul>
-
 <p>
-HTML provides the structure and meaning of the content.
-CSS and JavaScript add presentation and functionality.
+HTML creates the basic structure of a webpage. It is usually the first
+technology beginners learn when starting web development.
 </p>
 </section>
 
 <section id="css">
-<h2>CSS: Styling a Website</h2>
+<h2 class="section-title">3. CSS – Cascading Style Sheets</h2>
 
 <p>
-CSS stands for Cascading Style Sheets. It is used to control
-the appearance and layout of web pages.
+CSS is used to style HTML elements. It controls colors, fonts, spacing,
+layouts, borders, animations and the visual appearance of websites.
 </p>
 
-<p>
-CSS can control colors, fonts, spacing, borders, backgrounds,
-layouts, animations and responsive design.
-</p>
-
-<h3>Basic CSS Example</h3>
+<h3>Example of CSS</h3>
 
 <pre><code>body {
-    background-color: #0b0f19;
+    background-color: black;
     color: white;
     font-family: Arial, sans-serif;
 }
 
 h1 {
-    color: #60a5fa;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
+    color: blue;
 }</code></pre>
 
-<h3>Important CSS Concepts</h3>
-
-<ul>
-<li>Selectors</li>
-<li>Properties and values</li>
-<li>Box model</li>
-<li>Margins and padding</li>
-<li>Flexbox</li>
-<li>CSS Grid</li>
-<li>Positioning</li>
-<li>Media queries</li>
-<li>Transitions and animations</li>
-</ul>
-
 <p>
-CSS transforms a plain HTML structure into a visually organized
-and styled website.
+CSS makes websites visually attractive and helps organize content
+for different screen sizes.
 </p>
 </section>
 
 <section id="javascript">
-<h2>JavaScript: Making Websites Interactive</h2>
+<h2 class="section-title">4. JavaScript</h2>
 
 <p>
-JavaScript is a programming language used to add interactive
-behavior and dynamic functionality to websites.
+JavaScript is a programming language used to make websites interactive.
+It allows websites to respond to user actions, update content,
+validate forms and create dynamic features.
 </p>
 
-<p>
-JavaScript can respond to user actions, update page content,
-validate forms, manage application state, communicate with APIs
-and create interactive applications.
-</p>
+<h3>Example of JavaScript</h3>
 
-<h3>Basic JavaScript Example</h3>
-
-<pre><code>let message = "Welcome to Web Development!";
-
-console.log(message);
-
-function greetUser() {
-    alert("Hello, welcome!");
-}
-
-greetUser();</code></pre>
-
-<h3>JavaScript Can Help With</h3>
-
-<ul>
-<li>Interactive buttons</li>
-<li>Form validation</li>
-<li>Dynamic content</li>
-<li>Menus and navigation</li>
-<li>API communication</li>
-<li>Web applications</li>
-<li>Animations and interactive experiences</li>
-</ul>
+<pre><code>function greet() {
+    alert("Welcome to my website!");
+}</code></pre>
 
 <p>
-JavaScript can also be used on the server side through environments
-such as Node.js.
+JavaScript can also be used for backend development, mobile applications,
+web applications and many other software projects.
 </p>
 </section>
 
 <section id="frontend">
-<h2>Frontend Development</h2>
+<h2 class="section-title">5. Frontend Development</h2>
 
 <p>
-Frontend development focuses on the parts of a website or
-application that users interact with directly.
+Frontend development focuses on the parts of a website users see and
+interact with directly.
 </p>
+
+<div class="card">
+<h3>Frontend Technologies</h3>
+<ul>
+<li>HTML – Structure</li>
+<li>CSS – Design and styling</li>
+<li>JavaScript – Interactivity</li>
+<li>React – User interface library</li>
+<li>Bootstrap – CSS framework</li>
+</ul>
+</div>
 
 <p>
-Frontend developers combine HTML, CSS and JavaScript to build
-interfaces that are accessible, responsive and easy to use.
+Frontend developers work on layouts, navigation, animations,
+forms, responsive design and user experience.
 </p>
-
-<h3>Common Frontend Technologies</h3>
-
-<table>
-<thead>
-<tr>
-<th>Technology</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>HTML</td>
-<td>Structures website content.</td>
-</tr>
-<tr>
-<td>CSS</td>
-<td>Styles content and layouts.</td>
-</tr>
-<tr>
-<td>JavaScript</td>
-<td>Adds interactive behavior.</td>
-</tr>
-<tr>
-<td>React</td>
-<td>A JavaScript library for building user interfaces.</td>
-</tr>
-<tr>
-<td>Bootstrap</td>
-<td>A framework providing reusable styling and interface components.</td>
-</tr>
-<tr>
-<td>Tailwind CSS</td>
-<td>A utility-first CSS framework.</td>
-</tr>
-</tbody>
-</table>
 </section>
 
 <section id="backend">
-<h2>Backend Development</h2>
+<h2 class="section-title">6. Backend Development</h2>
 
 <p>
-Backend development focuses on the server-side functionality
-of a website or web application.
+Backend development manages the behind-the-scenes functionality
+of websites. It processes requests, manages application logic,
+handles user accounts and connects websites to databases.
 </p>
+
+<div class="card">
+<h3>Popular Backend Technologies</h3>
+<ul>
+<li>Python</li>
+<li>Java</li>
+<li>PHP</li>
+<li>Node.js</li>
+<li>Ruby</li>
+</ul>
+</div>
 
 <p>
-The backend may manage user accounts, authentication,
-business logic, database operations, APIs, data processing
-and application security.
+Backend systems are responsible for processing information,
+managing application operations and providing data to frontend systems.
 </p>
-
-<h3>Common Backend Technologies</h3>
-
-<table>
-<thead>
-<tr>
-<th>Technology</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Python</td>
-<td>Used for backend applications, APIs, automation and data processing.</td>
-</tr>
-<tr>
-<td>Node.js</td>
-<td>Runs JavaScript outside the browser and supports server-side development.</td>
-</tr>
-<tr>
-<td>PHP</td>
-<td>A server-side language commonly used in web development.</td>
-</tr>
-<tr>
-<td>Java</td>
-<td>Used to build enterprise applications, web services and backend systems.</td>
-</tr>
-<tr>
-<td>Express.js</td>
-<td>A web framework for Node.js.</td>
-</tr>
-<tr>
-<td>Django</td>
-<td>A Python web framework that provides tools for building web applications.</td>
-</tr>
-<tr>
-<td>Flask</td>
-<td>A lightweight Python web framework.</td>
-</tr>
-</tbody>
-</table>
 </section>
 
 <section id="database">
-<h2>Databases in Web Development</h2>
+<h2 class="section-title">7. Databases</h2>
 
 <p>
-Databases store, organize and manage information used by
-websites and web applications.
+Databases store and organize information so applications can
+retrieve, update and manage data.
 </p>
-
-<p>
-Applications may store information such as user profiles,
-product details, posts, preferences and transaction records.
-</p>
-
-<h3>Types of Databases</h3>
-
-<div class="card-grid">
 
 <div class="card">
-<h3>Relational Databases</h3>
-<p>
-Store data in structured tables with relationships.
-Examples include MySQL, PostgreSQL and SQLite.
-</p>
+<h3>Popular Database Technologies</h3>
+<ul>
+<li>MySQL</li>
+<li>PostgreSQL</li>
+<li>SQLite</li>
+<li>MongoDB</li>
+<li>Microsoft SQL Server</li>
+</ul>
 </div>
 
-<div class="card">
-<h3>NoSQL Databases</h3>
-<p>
-Support different data models and flexible data structures.
-Examples include MongoDB and Redis.
-</p>
-</div>
+<h3>Example of SQL</h3>
 
-</div>
-
-<h3>SQL</h3>
+<pre><code>SELECT * FROM students;</code></pre>
 
 <p>
-SQL stands for Structured Query Language. It is commonly used
-to create, retrieve, update and manage data in relational databases.
+This SQL query retrieves records from a table named students.
 </p>
-
-<pre><code>SELECT * FROM users;
-
-SELECT name, email
-FROM users
-WHERE id = 1;</code></pre>
 </section>
 
 <section id="tools">
-<h2>Essential Web Development Tools</h2>
+<h2 class="section-title">8. Web Development Tools</h2>
 
-<table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Visual Studio Code</td>
-<td>Code editor for writing and managing web development projects.</td>
-</tr>
-<tr>
-<td>Chrome DevTools</td>
-<td>Inspect, debug and test websites in the browser.</td>
-</tr>
-<tr>
-<td>Git</td>
-<td>Tracks changes to source code and supports version control.</td>
-</tr>
-<tr>
-<td>GitHub</td>
-<td>Hosts repositories and supports collaboration and project management.</td>
-</tr>
-<tr>
-<td>Web Browser</td>
-<td>Displays and tests web pages and applications.</td>
-</tr>
-<tr>
-<td>Terminal</td>
-<td>Runs commands, tools and development workflows.</td>
-</tr>
-</tbody>
-</table>
+<p>
+Web developers use tools to write code, test websites,
+manage projects and deploy applications.
+</p>
+
+<div class="card">
+<ul>
+<li>Visual Studio Code</li>
+<li>Git</li>
+<li>GitHub</li>
+<li>Chrome Developer Tools</li>
+<li>PyCharm</li>
+<li>Figma</li>
+</ul>
+</div>
+
+<p>
+These tools help developers improve productivity,
+debug problems and manage code.
+</p>
 </section>
 
 <section id="responsive">
-<h2>Responsive Web Design</h2>
+<h2 class="section-title">9. Responsive Web Design</h2>
 
 <p>
-Responsive web design helps websites adapt to different screen sizes
-and devices, including desktops, laptops, tablets and smartphones.
+Responsive web design allows websites to adapt to different screen sizes,
+including mobile phones, tablets, laptops and desktop computers.
 </p>
 
-<p>
-A responsive website adjusts its layouts, content and presentation
-according to the available screen space.
-</p>
-
-<h3>Responsive Design Techniques</h3>
-
-<ul>
-<li>CSS media queries</li>
-<li>Flexible layouts</li>
-<li>Flexbox</li>
-<li>CSS Grid</li>
-<li>Flexible images</li>
-<li>Relative units</li>
-<li>Mobile-friendly navigation</li>
-</ul>
-
-<h3>Media Query Example</h3>
+<h3>Example</h3>
 
 <pre><code>@media (max-width: 600px) {
-    .container {
-        padding: 15px;
-    }
-
     h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 }</code></pre>
 
 <p>
-Responsive design is important because visitors use different
-devices and screen sizes to access websites.
+Responsive design improves accessibility and user experience
+across different devices.
 </p>
 </section>
 
 <section id="hosting">
-<h2>Web Hosting and Deployment</h2>
+<h2 class="section-title">10. Website Hosting</h2>
 
 <p>
-Web hosting makes websites and web applications available
-through the internet. Deployment is the process of publishing
-a website or application into an environment where users can access it.
+Website hosting makes a website accessible through the internet.
+Websites can be deployed using different hosting platforms.
 </p>
 
-<h3>Common Hosting Options</h3>
-
+<div class="card">
+<h3>Popular Hosting Platforms</h3>
 <ul>
-<li><strong>GitHub Pages:</strong> Hosts static websites from GitHub repositories.</li>
-<li><strong>Cloud hosting:</strong> Provides computing, storage and other services through cloud platforms.</li>
-<li><strong>Shared hosting:</strong> Hosts multiple websites on a shared server environment.</li>
-<li><strong>Virtual private servers:</strong> Provide virtualized server environments.</li>
-<li><strong>Platform hosting:</strong> Offers managed environments for deploying applications.</li>
+<li>GitHub Pages</li>
+<li>Netlify</li>
+<li>Vercel</li>
+<li>Cloudflare Pages</li>
+<li>Shared web hosting</li>
 </ul>
-
-<h3>Domain Name</h3>
-
-<p>
-A domain name is a human-readable address used to access
-a website, such as example.com.
-</p>
-
-<h3>HTTPS</h3>
-
-<p>
-HTTPS uses HTTP over TLS to help protect communication
-between a browser and a web server.
-</p>
-
-<div class="highlight">
-<p>
-A website's deployment process may include code preparation,
-testing, hosting configuration, domain configuration
-and monitoring.
-</p>
 </div>
+
+<p>
+Static websites can be published using GitHub Pages.
+Dynamic applications may require additional hosting services.
+</p>
 </section>
 
 <section id="roadmap">
-<h2>Web Development Learning Roadmap</h2>
+<h2 class="section-title">11. Web Development Learning Roadmap</h2>
+
+<div class="card">
+<h3>Beginner Roadmap</h3>
+
+<ol>
+<li>Learn HTML fundamentals.</li>
+<li>Learn CSS fundamentals.</li>
+<li>Build simple webpages.</li>
+<li>Learn JavaScript fundamentals.</li>
+<li>Practice responsive web design.</li>
+<li>Learn Git and GitHub.</li>
+<li>Build projects.</li>
+<li>Explore frontend frameworks.</li>
+<li>Learn backend development.</li>
+<li>Explore databases.</li>
+<li>Deploy projects online.</li>
+</ol>
+</div>
 
 <p>
-If you want to become a web developer, follow a structured
-learning path and practice by building real projects.
-</p>
-
-<h3>Step 1: Learn HTML</h3>
-<ul>
-<li>HTML structure</li>
-<li>Headings and paragraphs</li>
-<li>Links and images</li>
-<li>Lists and tables</li>
-<li>Forms</li>
-<li>Semantic HTML</li>
-</ul>
-
-<h3>Step 2: Learn CSS</h3>
-<ul>
-<li>Selectors</li>
-<li>Colors and typography</li>
-<li>Box model</li>
-<li>Flexbox</li>
-<li>Grid</li>
-<li>Responsive design</li>
-</ul>
-
-<h3>Step 3: Learn JavaScript</h3>
-<ul>
-<li>Variables and data types</li>
-<li>Conditions</li>
-<li>Loops</li>
-<li>Functions</li>
-<li>Arrays and objects</li>
-<li>DOM manipulation</li>
-<li>Events</li>
-</ul>
-
-<h3>Step 4: Build Projects</h3>
-<ul>
-<li>Personal portfolio website</li>
-<li>Landing page</li>
-<li>Calculator</li>
-<li>To-do application</li>
-<li>Blog website</li>
-<li>Simple interactive website</li>
-</ul>
-
-<h3>Step 5: Learn Git and GitHub</h3>
-<ul>
-<li>Repositories</li>
-<li>Commits</li>
-<li>Branches</li>
-<li>Version control</li>
-<li>Publishing projects</li>
-</ul>
-
-<h3>Step 6: Learn Frontend Frameworks</h3>
-<ul>
-<li>React fundamentals</li>
-<li>Components</li>
-<li>State and props</li>
-<li>Routing</li>
-<li>Application structure</li>
-</ul>
-
-<h3>Step 7: Learn Backend Development</h3>
-<ul>
-<li>Python, Java, PHP or Node.js</li>
-<li>Server-side fundamentals</li>
-<li>APIs</li>
-<li>Authentication fundamentals</li>
-<li>Backend frameworks</li>
-</ul>
-
-<h3>Step 8: Learn Databases</h3>
-<ul>
-<li>SQL</li>
-<li>Tables and relationships</li>
-<li>CRUD operations</li>
-<li>Database design fundamentals</li>
-<li>Database integration</li>
-</ul>
-
-<h3>Step 9: Learn Deployment</h3>
-<ul>
-<li>Hosting</li>
-<li>Domain names</li>
-<li>HTTPS</li>
-<li>Deployment workflows</li>
-<li>Basic monitoring</li>
-</ul>
-
-<h3>Step 10: Build Your Portfolio</h3>
-
-<p>
-Create multiple projects, document your work, publish your code
-and build a portfolio that demonstrates your development skills.
+Consistent practice and building real projects are important
+for improving web development skills.
 </p>
 </section>
 
 <section id="faq">
-<h2>Frequently Asked Questions</h2>
+<h2 class="section-title">12. Frequently Asked Questions</h2>
 
-<div class="faq">
-<h3>1. What is web development in simple words?</h3>
+<div class="card">
+<h3>What is web development?</h3>
 <p>
-Web development is the process of building websites and
-web applications that people use through browsers.
+Web development is the process of building, maintaining and
+improving websites and web applications.
+</p>
+
+<h3>Is web development difficult for beginners?</h3>
+<p>
+Web development can be learned step by step. Starting with HTML,
+CSS and JavaScript provides a foundation for further learning.
+</p>
+
+<h3>Do I need to learn HTML before CSS?</h3>
+<p>
+Learning HTML first is recommended because CSS is used to style
+HTML content.
+</p>
+
+<h3>Can I learn web development for free?</h3>
+<p>
+Many free learning resources, documentation and tutorials
+are available online.
+</p>
+
+<h3>Can I create websites using only HTML and CSS?</h3>
+<p>
+Yes. HTML and CSS can be used to build static websites.
+JavaScript adds more interactive functionality.
 </p>
 </div>
-
-<div class="faq">
-<h3>2. Which languages should I learn first?</h3>
-<p>
-Start with HTML, CSS and JavaScript. These three technologies
-form a useful foundation for frontend web development.
-</p>
-</div>
-
-<div class="faq">
-<h3>3. Is web development difficult?</h3>
-<p>
-Web development involves learning several concepts,
-but beginners can build their skills gradually through
-practice and small projects.
-</p>
-</div>
-
-<div class="faq">
-<h3>4. Can I learn web development without a degree?</h3>
-<p>
-You can learn web development independently through
-structured learning, practice, documentation and projects.
-Employers may have different educational requirements
-for different positions.
-</p>
-</div>
-
-<div class="faq">
-<h3>5. What is the difference between frontend and backend?</h3>
-<p>
-Frontend handles the user-facing interface. Backend handles
-server-side processing, application logic and data operations.
-</p>
-</div>
-
-<div class="faq">
-<h3>6. What is full-stack development?</h3>
-<p>
-Full-stack development involves working on frontend and backend
-parts of a web application.
-</p>
-</div>
-
-<div class="faq">
-<h3>7. What is HTML?</h3>
-<p>
-HTML is a markup language used to structure content
-on web pages.
-</p>
-</div>
-
-<div class="faq">
-<h3>8. What is CSS?</h3>
-<p>
-CSS is used to style web pages, control layouts
-and improve their visual presentation.
-</p>
-</div>
-
-<div class="faq">
-<h3>9. What is JavaScript?</h3>
-<p>
-JavaScript is a programming language used to create
-interactive and dynamic web experiences.
-</p>
-</div>
-
-<div class="faq">
-<h3>10. Can I build websites using only HTML and CSS?</h3>
-<p>
-Yes. HTML and CSS can be used to create static websites.
-JavaScript is commonly added for interactive functionality.
-</p>
-</div>
-
 </section>
-
-<section id="conclusion">
-<h2>Conclusion</h2>
-
-<p>
-Web development is an important technology field that combines
-programming, design, data management and application development.
-</p>
-
-<p>
-HTML provides structure, CSS controls presentation and JavaScript
-adds interactive functionality. Frontend and backend technologies
-work together to create complete web applications.
-</p>
-
-<p>
-By learning the fundamentals, practicing consistently and building
-projects, beginners can gradually develop their web development
-skills and explore different career opportunities.
-</p>
 
 <div class="cta">
-<h2>Continue Learning with TechSphere</h2>
-
+<h2>Continue Your Technology Journey</h2>
 <p>
-Explore more technology guides and continue learning
-programming, Artificial Intelligence and Machine Learning.
+Explore cybersecurity fundamentals and discover how digital
+systems, networks and information are protected.
 </p>
 
-<ul>
-<li><a href="https://budenshas.github.io/TechSphere/python.html">Learn Python Programming</a></li>
-<li><a href="https://budenshas.github.io/TechSphere/what-is-ai.html">Explore Artificial Intelligence</a></li>
-<li><a href="https://budenshas.github.io/TechSphere/machine-learning.html">Learn Machine Learning</a></li>
-<li><a href="https://budenshas.github.io/TechSphere/cybersecurity-for-beginners.html">Learn Cybersecurity</a></li>
-<li><a href="https://budenshas.github.io/TechSphere/index.html">Explore TechSphere</a></li>
-</ul>
+<a href="https://budenshas.github.io/TechSphere/cybersecurity-for-beginners.html">
+Explore Cybersecurity
+</a>
 </div>
 
-</section>
-
-</article>
 </div>
-</main>
 
 <footer>
-    <div class="logo">Tech<span>Sphere</span></div>
+<p>TechSphere | Explore. Learn. Build.</p>
 
-    <p>Explore. Learn. Build.</p>
+<p>
+<a href="https://budenshas.github.io/TechSphere/">Home</a> |
+<a href="https://budenshas.github.io/TechSphere/about.html">About</a> |
+<a href="https://budenshas.github.io/TechSphere/contact.html">Contact</a> |
+<a href="https://budenshas.github.io/TechSphere/privacy-policy.html">Privacy Policy</a> |
+<a href="https://budenshas.github.io/TechSphere/terms.html">Terms</a> |
+<a href="https://budenshas.github.io/TechSphere/disclaimer.html">Disclaimer</a>
+</p>
 
-    <div class="footer-links">
-        <a href="https://budenshas.github.io/TechSphere/index.html">Home</a>
-        <a href="https://budenshas.github.io/TechSphere/about.html">About</a>
-        <a href="https://budenshas.github.io/TechSphere/contact.html">Contact</a>
-        <a href="https://budenshas.github.io/TechSphere/privacy-policy.html">Privacy Policy</a>
-        <a href="https://budenshas.github.io/TechSphere/terms.html">Terms</a>
-        <a href="https://budenshas.github.io/TechSphere/disclaimer.html">Disclaimer</a>
-    </div>
-
-    <p>&copy; 2026 TechSphere. All rights reserved.</p>
+<p>© 2026 TechSphere. All rights reserved.</p>
 </footer>
 
 </body>
