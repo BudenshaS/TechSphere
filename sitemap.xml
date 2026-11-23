@@ -1,49 +1,44 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <url>
-        <loc>https://YOUR-DOMAIN.com/</loc>
-    </url>
+  <url>
+    <loc>https://budenshas.github.io/TechSphere/</loc>
+  </url>
 
-    <url>
-        <loc>https://YOUR-DOMAIN.com/about.html</loc>
-    </url>
+  <url>
+    <loc>https://budenshas.github.io/TechSphere/index.html</loc>
+  </url>
 
-    <url>
-        <loc>https://YOUR-DOMAIN.com/contact.html</loc>
-    </url>
+  <url>
+    <loc>https://budenshas.github.io/TechSphere/python.html</loc>
+  </url>
 
-    <url>
-        <loc>https://YOUR-DOMAIN.com/privacy-policy.html</loc>
-    </url>
+  <url>
+    <loc>https://budenshas.github.io/TechSphere/what-is-ai.html</loc>
+  </url>
 
-    <url>
-        <loc>https://YOUR-DOMAIN.com/terms.html</loc>
-    </url>
+  <url>
+    <loc>https://budenshas.github.io/TechSphere/about.html</loc>
+  </url>
 
-    <url>
-        <loc>https://YOUR-DOMAIN.com/disclaimer.html</loc>
-    </url>
+  <url>
+    <loc>https://budenshas.github.io/TechSphere/contact.html</loc>
+  </url>
 
-    <url>
-        <loc>https://YOUR-DOMAIN.com/articles/what-is-ai.html</loc>
-    </url>
+  <url>
+    <loc>https://budenshas.github.io/TechSphere/developer.html</loc>
+  </url>
 
-    <url>
-        <loc>https://YOUR-DOMAIN.com/articles/python-for-beginners.html</loc>
-    </url>
+  <url>
+    <loc>https://budenshas.github.io/TechSphere/privacy-policy.html</loc>
+  </url>
 
-    <url>
-        <loc>https://YOUR-DOMAIN.com/articles/machine-learning-for-beginners.html</loc>
-    </url>
+  <url>
+    <loc>https://budenshas.github.io/TechSphere/terms.html</loc>
+  </url>
 
-    <url>
-        <loc>https://YOUR-DOMAIN.com/articles/cybersecurity-for-beginners.html</loc>
-    </url>
-
-    <url>
-        <loc>https://YOUR-DOMAIN.com/articles/web-development-for-beginners.html</loc>
-    </url>
+  <url>
+    <loc>https://budenshas.github.io/TechSphere/disclaimer.html</loc>
+  </url>
 
 </urlset>
