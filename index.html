@@ -71,6 +71,22 @@
     }
     </script>
 
+    <!-- STRUCTURED DATA: HOMEPAGE -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "TechSphere - Explore. Learn. Build.",
+      "url": "https://budenshas.github.io/TechSphere/",
+      "description": "Explore beginner-friendly technology guides on AI, Python, machine learning, cybersecurity and web development.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "TechSphere",
+        "url": "https://budenshas.github.io/TechSphere/"
+      }
+    }
+    </script>
+
 </head>
 
 <body>
@@ -248,7 +264,7 @@
                 <span class="topic-link">Explore topic ↗</span>
             </a>
 
-            <a href="articles/machine-learning-for-beginners.html" class="topic-card reveal">
+            <a href="machine-learning.html" class="topic-card reveal">
                 <div class="topic-icon icon-ml" aria-hidden="true">◈</div>
                 <div class="topic-number">03</div>
                 <h3>Machine Learning</h3>
@@ -356,6 +372,7 @@
 
         <div class="articles-grid" id="articles-grid">
 
+            <!-- AI ARTICLE -->
             <article class="article-card reveal" data-title="what is artificial intelligence ai">
                 <div class="article-card-top article-ai">
                     <span class="article-category">Artificial Intelligence</span>
@@ -370,6 +387,7 @@
                 </div>
             </article>
 
+            <!-- PYTHON ARTICLE -->
             <article class="article-card reveal" data-title="python programming for beginners">
                 <div class="article-card-top article-python">
                     <span class="article-category">Programming</span>
@@ -384,7 +402,8 @@
                 </div>
             </article>
 
-            <article class="article-card reveal" data-title="machine learning for beginners">
+            <!-- MACHINE LEARNING ARTICLE -->
+            <article class="article-card reveal" data-title="machine learning for beginners algorithms data">
                 <div class="article-card-top article-ml">
                     <span class="article-category">Machine Learning</span>
                     <div class="article-art" aria-hidden="true">ML</div>
@@ -394,11 +413,12 @@
                     <div class="article-meta">BEGINNER GUIDE</div>
                     <h3>Machine Learning Explained</h3>
                     <p>Discover how computers learn from data and recognize patterns.</p>
-                    <a href="articles/machine-learning-for-beginners.html" class="article-link">Read article <span aria-hidden="true">↗</span></a>
+                    <a href="machine-learning.html" class="article-link">Read article <span aria-hidden="true">↗</span></a>
                 </div>
             </article>
 
-            <article class="article-card reveal" data-title="cybersecurity for beginners">
+            <!-- CYBERSECURITY ARTICLE -->
+            <article class="article-card reveal" data-title="cybersecurity for beginners digital security">
                 <div class="article-card-top article-cyber">
                     <span class="article-category">Cybersecurity</span>
                     <div class="article-art" aria-hidden="true">SEC</div>
@@ -412,6 +432,7 @@
                 </div>
             </article>
 
+            <!-- WEB DEVELOPMENT ARTICLE -->
             <article class="article-card reveal" data-title="web development for beginners html css javascript">
                 <div class="article-card-top article-web">
                     <span class="article-category">Web Development</span>
@@ -426,7 +447,8 @@
                 </div>
             </article>
 
-            <article class="article-card reveal" data-title="future technology innovations">
+            <!-- FUTURE TECHNOLOGY ARTICLE -->
+            <article class="article-card reveal" data-title="future technology innovations emerging technology">
                 <div class="article-card-top article-future">
                     <span class="article-category">Emerging Technology</span>
                     <div class="article-art" aria-hidden="true">FT</div>
@@ -442,6 +464,7 @@
 
         </div>
 
+        <!-- SEARCH EMPTY STATE -->
         <div class="no-results" id="no-results">
             <div class="no-results-icon" aria-hidden="true">⌕</div>
             <h3>No articles found</h3>
@@ -546,6 +569,7 @@
                 <h4>Popular Topics</h4>
                 <a href="what-is-ai.html">Artificial Intelligence</a>
                 <a href="python.html">Programming</a>
+                <a href="machine-learning.html">Machine Learning</a>
                 <a href="articles/cybersecurity-for-beginners.html">Cybersecurity</a>
             </div>
 
