@@ -156,6 +156,75 @@
             background: #2563eb;
         }
 
+        /* Native Advertisement Section */
+        .native-banner-section {
+            padding: 45px 20px;
+            background: transparent;
+        }
+
+        .native-ad-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            border-radius: 18px;
+            overflow: hidden;
+            background: #0b1120;
+        }
+
+        .native-ad-label {
+            padding: 12px 20px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: #94a3b8;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .native-ad-content {
+            padding: 35px 25px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .native-ad-icon {
+            font-size: 30px;
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+
+        .native-ad-content h3 {
+            color: #ffffff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .native-ad-content p {
+            color: #94a3b8;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        .native-ad-placeholder {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            border: 1px dashed rgba(148, 163, 184, 0.3);
+            border-radius: 8px;
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .native-banner-section {
+                padding: 30px 15px;
+            }
+
+            .native-ad-content {
+                padding: 25px 15px;
+            }
+        }
+
         @media (max-width: 650px) {
             .cookie-banner {
                 flex-direction: column;
@@ -664,16 +733,31 @@
 
 </main>
 
-<!-- NATIVE BANNER AD SECTION -->
-<!--
-External advertising code is intentionally disabled here.
-Have a parent or guardian review the ad provider and its content
-before enabling any third-party ad scripts.
--->
-
+<!-- NATIVE ADVERTISEMENT SECTION -->
 <section class="native-banner-section" id="native-banner-ad" aria-label="Advertisement">
-    <!-- Ad placement reserved -->
-    <!-- Reviewed advertising code can be placed here later. -->
+    <div class="native-ad-container">
+
+        <div class="native-ad-label">
+            ADVERTISEMENT
+        </div>
+
+        <div class="native-ad-content">
+            <div class="native-ad-icon" aria-hidden="true">
+                ◈
+            </div>
+
+            <h3>Sponsored Content</h3>
+
+            <p>
+                This advertising space is reserved for sponsored content.
+            </p>
+
+            <span class="native-ad-placeholder">
+                Advertisement space
+            </span>
+        </div>
+
+    </div>
 </section>
 
 <!-- FOOTER -->
@@ -854,4 +938,3 @@ before enabling any third-party ad scripts.
 
 </body>
 </html>
-
